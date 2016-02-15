@@ -1,0 +1,73 @@
+@mixin ptSansCaptBold ($size, $color) {
+  font-family: "PT Sans Caption Bold";
+  font-size: $size;
+  color: $color;
+}
+@mixin ptSansBold ($size, $color) {
+  font-family: "PT Sans Bold";
+  font-size: $size;
+  color: $color;
+}
+@mixin ptSansReg ($size, $color) {
+  font-family: "PT Sans Regular";
+  font-size: $size;
+  color: $color;
+}
+
+.header_container {
+  min-height: 526px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 75%;
+  background-image: url("../img/header_content.jpg");
+}
+.connect_block {
+  width: 402px;
+  padding: 62px 37px 42px 37px;
+  min-height: 196px;
+  margin-top: 80px;
+  margin-left: 463px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+}
+.connect_block_title {
+  margin: 0px;
+  @include ptSansCaptBold(30px, white);
+}
+.connect_block_description {
+  margin: 7px 0px 0px;
+  @include ptSansBold(20px, white);
+}
+.connect_block_btn {
+  float: left;
+  width: 141px;
+  min-height: 42px;
+  margin-top: 40px;
+  background-color: #ef6210;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 42px;
+  text-decoration: none;
+  @include ptSansReg (18px, white);
+}
+.connect_block_links {
+  float: left;
+  min-height: 42px;
+  margin-top: 40px;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid white;
+  @include ptSansReg (18px, white);
+  text-decoration: none;
+    a {
+      display: block;
+      @include ptSansReg (18px, white);
+      line-height: 16px;
+    }
+  .prices {
+    margin-top: 2px;
+  }
+  .discounts {
+    margin-top: 8px;
+  }
+}

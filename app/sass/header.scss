@@ -1,0 +1,28 @@
+@mixin furore ($size, $color) {
+  font-family: "furore";
+  font-size: $size;
+  color: $color;
+}
+@mixin ptSansReg ($size, $color) {
+  font-family: "PT Sans Regular";
+  font-size: $size;
+  color: $color;
+}
+
+.header {
+  min-height: 70px;
+  background-color: #261e24;
+
+}
+.logo {
+  display: inline-block;
+  margin-top: 12px;
+  @include furore(36px, #f0efea);
+}
+.address {
+  float: right;
+  width: 306px;
+  margin-top: 13px;
+  text-align: right;
+  @include ptSansReg(18px, #f0efea);
+}

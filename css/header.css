@@ -1,0 +1,22 @@
+.header {
+  min-height: 70px;
+  background-color: #261e24;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: "furore";
+  font-size: 36px;
+  color: #f0efea;
+}
+
+.address {
+  float: right;
+  width: 306px;
+  margin-top: 13px;
+  text-align: right;
+  font-family: "PT Sans Regular";
+  font-size: 18px;
+  color: #f0efea;
+}
