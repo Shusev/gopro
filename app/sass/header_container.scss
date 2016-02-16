@@ -23,12 +23,7 @@
 }
 .connect_block {
   width: 402px;
-  padding: 62px 37px 42px 37px;
-  min-height: 196px;
   margin-top: 80px;
-  margin-left: 463px;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 4px;
 }
 .connect_block_title {
   margin: 0px;
@@ -49,25 +44,4 @@
   line-height: 42px;
   text-decoration: none;
   @include ptSansReg (18px, white);
-}
-.connect_block_links {
-  float: left;
-  min-height: 42px;
-  margin-top: 40px;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 1px solid white;
-  @include ptSansReg (18px, white);
-  text-decoration: none;
-    a {
-      display: block;
-      @include ptSansReg (18px, white);
-      line-height: 16px;
-    }
-  .prices {
-    margin-top: 2px;
-  }
-  .discounts {
-    margin-top: 8px;
-  }
 }

@@ -8,21 +8,151 @@
   font-size: $size;
   color: $color;
 }
+@mixin ptSansBold ($size, $color) {
+  font-family: "PT Sans Bold";
+  font-size: $size;
+  color: $color;
+}
 
 .header {
-  min-height: 70px;
-  background-color: #261e24;
-
+  min-height: 97px;
+  background-color: black;
+  border-top: 2px solid #ef6210;
 }
 .logo {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 25px;
   @include furore(36px, #f0efea);
+}
+.soc_btns {
+  float: right;
+  height: 42px;
+  a {
+    width: 43px;
+    height: 45px;
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+.mail_tab {
+  display: inline-block;
+  width: 43px;
+  height: 45px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  &:hover {
+    background-color: #ef6210;
+  }
+}
+.vk_tab {
+  display: inline-block;
+  width: 43px;
+  height: 45px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  &:hover {
+    background-color: #527498;
+  }
+}
+
+.vk {
+  display: inline-block;
+  position: relative;
+  top: -49px;
+  left: 4px;
+  width: 14px;
+  height: 18px;
+  margin-top: 16px;
+  margin-left: 10px;
+  background: url("../img/vk.png");
+}
+.mail {
+  display: inline-block;
+  position: relative;
+  top: -50px;
+  left: -1px;
+  width: 20px;
+  height: 14px;
+  margin-top: 20px;
+  margin-left: 10px;
+  background: url("../img/mail.png");
 }
 .address {
   float: right;
-  width: 306px;
   margin-top: 13px;
+  margin-right: 13px;
   text-align: right;
-  @include ptSansReg(18px, #f0efea);
+  @include ptSansReg(14px, #f0efea);
+  text-decoration: underline;
+  &:before {
+    position: relative;
+    left: -12px;
+    bottom: -5px;
+    display: inline-block;
+    content: "";
+    width: 11px;
+    height: 17px;
+    background: url("../img/map_pin.png");
+  }
+}
+.connect_block_links {
+  text-align: right;
+  text-transform: uppercase;
+  a {
+    @include ptSansBold (16px, white);
+    text-decoration: none;
+  }
+  .phone {
+    @include ptSansBold (16px, #ef6210);
+  }
+  .prices {
+    display: inline-block;
+    margin-left: 23px;
+    height: 27px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    border-bottom: 4px solid black;
+    &:hover {
+      border-bottom: 4px solid #ef6210;
+    }
+  }
+  .discounts {
+    display: inline-block;
+    margin-left: 23px;
+    height: 27px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    border-bottom: 4px solid black;
+    &:hover {
+      border-bottom: 4px solid #ef6210;
+    }
+  }
+  .contacts {
+    display: inline-block;
+    margin-left: 23px;
+    height: 27px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    border-bottom: 4px solid black;
+    z-index: 555;
+    &:hover {
+      border-bottom: 4px solid #ef6210;
+    }
+  }
 }

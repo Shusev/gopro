@@ -8,12 +8,7 @@
 
 .connect_block {
   width: 402px;
-  padding: 62px 37px 42px 37px;
-  min-height: 196px;
   margin-top: 80px;
-  margin-left: 463px;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 4px;
 }
 
 .connect_block_title {
@@ -43,30 +38,4 @@
   font-family: "PT Sans Regular";
   font-size: 18px;
   color: white;
-}
-
-.connect_block_links {
-  float: left;
-  min-height: 42px;
-  margin-top: 40px;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 1px solid white;
-  font-family: "PT Sans Regular";
-  font-size: 18px;
-  color: white;
-  text-decoration: none;
-}
-.connect_block_links a {
-  display: block;
-  font-family: "PT Sans Regular";
-  font-size: 18px;
-  color: white;
-  line-height: 16px;
-}
-.connect_block_links .prices {
-  margin-top: 2px;
-}
-.connect_block_links .discounts {
-  margin-top: 8px;
 }
