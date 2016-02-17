@@ -1,0 +1,32 @@
+.form_container {
+  min-height: 562px;
+  background-color: white;
+}
+.shadow_block {
+  position: relative;
+  left: 3px;
+  width: 887px;
+  min-height: 562px;
+  background-color: black;
+  -webkit-box-shadow: inset 5px 528px 65px 36px rgba(255,255,255,1);
+  -moz-box-shadow: inset 5px 528px 65px 36px rgba(255,255,255,1);
+  box-shadow: inset 5px 528px 65px 36px rgba(255,255,255,1);
+}
+.form_block {
+  position: absolute;
+  top: 188px;
+  left: 90px;
+  width: 332px;
+  min-height: 374px;
+  background-color: #261e24;
+  border-radius: 3px;
+  z-index: 2;
+}
+.starter_img {
+  width: 447px;
+  height: 294px;
+  top: 301px;
+  left: 385px;
+  position: absolute;
+  background: url("../img/starter.png") no-repeat;
+}

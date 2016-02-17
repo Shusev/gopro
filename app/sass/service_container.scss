@@ -1,0 +1,54 @@
+@mixin ptSansReg ($size, $color) {
+  font-family: "PT Sans Regular";
+  font-size: $size;
+  color: $color;
+}
+@mixin ptSansBold ($size, $color) {
+  font-family: "PT Sans Bold";
+  font-size: $size;
+  color: $color;
+}
+.service_container {
+  min-height: 480px;
+  background-color: #f0efea;
+}
+.service_title {
+  display: block;
+  margin-top: 41px;
+  @include ptSansBold(18px, black);
+}
+.service_text {
+  display: block;
+  margin-top: 13px;
+  @include ptSansReg(16px, black);
+}
+.service {
+  float: left;
+  margin-left: 65px;
+  margin-top: 95px;
+  width: 188px;
+  min-height: 300px;
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+.service1_img {
+  width: 91px;
+  height: 110px;
+  background: url("../img/service.png") no-repeat 0px 0px;
+}
+.service2_img {
+  width: 74px;
+  height: 110px;
+  background: url("../img/service.png") no-repeat 0px -120px;
+}
+.service3_img {
+  width: 89px;
+  height: 110px;
+  background: url("../img/service.png") no-repeat 0px -240px;
+}
+.service4_img {
+  width: 123px;
+  height: 110px;
+  background: url("../img/service.png") no-repeat 0px -360px;
+}

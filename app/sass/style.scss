@@ -3,6 +3,9 @@
 
 @import url(../css/header.css);
 @import url(../css/header_container.css);
+@import url(../css/service_container.css);
+@import url(../css/form_container.css);
+@import url(../css/prices_container.css);
 
 @font-face {
   font-family: 'PT Sans Caption';
@@ -93,21 +96,6 @@
   url('../fonts/furore/furore-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-@mixin ptsans ($size, $color) {
-  font-family: "PT Sans Regular";
-  font-size: $size;
-  color: $color;
-}
-@mixin ptsans_narrow_bold ($size, $color) {
-  font-family: "PT Sans Narrow Bold";
-  font-size: $size;
-  color: $color;
-}
-@mixin ptsans_bold ($size, $color) {
-  font-family: "PT Sans Bold";
-  font-size: $size;
-  color: $color;
 }
 @mixin reset_ul {
   list-style-type: none;
