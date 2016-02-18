@@ -13,6 +13,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Days';
+  src: url("../fonts/DaysRegular/DaysRegular.eot"), url("../fonts/DaysRegular/DaysRegular.woff") format("woff"), url("../fonts/DaysRegular/DaysRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'PT Sans Caption Bold';
   src: url("../fonts/ptsans/ptc75f-webfont.eot");
   src: url("../fonts/ptsans/ptc75f-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ptsans/ptc75f-webfont.woff2") format("woff2"), url("../fonts/ptsans/ptc75f-webfont.woff") format("woff"), url("../fonts/ptsans/ptc75f-webfont.ttf") format("truetype");

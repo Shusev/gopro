@@ -1,10 +1,26 @@
+@mixin ptSansCaptBold ($size, $color) {
+  font-family: "PT Sans Caption Bold";
+  font-size: $size;
+  color: $color;
+}
+@mixin ptSansReg ($size, $color) {
+  font-family: "PT Sans Regular";
+  font-size: $size;
+  color: $color;
+}
+@mixin days ($size, $color) {
+  font-family: "Days";
+  font-size: $size;
+  color: $color;
+}
 .form_container {
   min-height: 562px;
   background-color: white;
 }
 .shadow_block {
   position: relative;
-  left: 3px;
+  left: -89px;
+  top: -169px;
   width: 887px;
   min-height: 562px;
   background-color: black;
@@ -25,8 +41,76 @@
 .starter_img {
   width: 447px;
   height: 294px;
-  top: 301px;
+  top: 300px;
   left: 385px;
   position: absolute;
   background: url("../img/starter.png") no-repeat;
+}
+.disc_title {
+  position: relative;
+  margin: 127px 0px 0px 0px;
+  @include ptSansCaptBold (36px, #261e24);
+  z-index: 3;
+}
+.disc_text {
+  display: block;
+  position: absolute;
+  width: 445px;
+  margin-left: 370px;
+  margin-top: 26px;
+  @include ptSansReg (18px, #261e24);
+  line-height: 18px;
+  z-index: 3;
+}
+.form_block_inner {
+  width: 250px;
+  min-height: 256px;
+  padding: 27px;
+  background-color: #3c353a;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 29px;
+}
+.disc_percent {
+  float: left;
+  line-height: 40px;
+  @include days(40px, #ef6210);
+}
+.disc_percent_text {
+  float: left;
+  width: 166px;
+  line-height: 18px;
+  margin-left: 3px;
+  @include ptSansReg(18px, #827d80);
+}
+.contacts_input {
+  width: 216px;
+  min-height: 38px;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+  border: none;
+}
+.btn_animation {
+  width: 148px;
+  min-height: 34px;
+  @include ptSansReg(18px, white);
+  text-align: center;
+  line-height: 34px;
+  border-radius: 3px;
+  background-color: #ef6210;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 23px;
+}
+.submit_btn {
+  background: transparent;
+  border: none;
+}
+.form_footer_text {
+  display: block;
+  margin-top: 12px;
+  @include ptSansReg(18px, white);
 }

@@ -74,7 +74,7 @@
   height: 18px;
   margin-top: 16px;
   margin-left: 10px;
-  background: url("../img/vk.png");
+  background: url("../img/vk.png") no-repeat;
 }
 .mail {
   display: inline-block;
@@ -85,7 +85,7 @@
   height: 14px;
   margin-top: 20px;
   margin-left: 10px;
-  background: url("../img/mail.png");
+  background: url("../img/mail.png") no-repeat;
 }
 .address {
   float: right;

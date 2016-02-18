@@ -72,8 +72,20 @@ html
 					span.service_text Ремонтируем стартеры и генераторы любого вида техники
 		.form_container
 			.main_container.clearfix
+				h2.disc_title Скидки на ремонт
+				span.disc_text При оформлении скидки вы получаете разовую скидку на ремонт стартера, генератора или агрегата целиком. <br><br><font color="#ef6210">Внимание!</font> Акции и размеры скидок периодически меняются для разных услуг.
 				.shadow_block
 					.form_block
+						.form_block_inner
+							.form_block_title
+								span.disc_percent 10%
+								span.disc_percent_text скидка на ремонт стартера, генератора или агрегата
+								form#send_form(action='', method='POST')
+									input#name(name="name" type="text" class="contacts_input name_tooltip" placeholder="Как к вам обращаться?" qtip-position="left" qtip-content="Введите имя")
+									input#phone(name="phone" type="text" class="contacts_input phone_tooltip" placeholder="Ваш контактный телефона" qtip-position="left" qtip-content="Введите номер")
+									.btn_animation
+										input(type="submit" value="получить скидку" class="submit_btn hvr-sweep-to-right")
+								span.form_footer_text мы скоро с вами свяжемся!
 					.starter_img
 		.prices_container
 
