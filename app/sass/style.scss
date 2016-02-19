@@ -6,6 +6,9 @@
 @import url(../css/service_container.css);
 @import url(../css/form_container.css);
 @import url(../css/prices_container.css);
+@import url(../css/brands_container.css);
+@import url(../css/certificate_container.css);
+@import url(../css/footer.css);
 
 @font-face {
   font-family: 'PT Sans Caption';
@@ -22,6 +25,16 @@
   src: url('../fonts/DaysRegular/DaysRegular.eot'),
   url('../fonts/DaysRegular/DaysRegular.woff') format('woff'),
   url('../fonts/DaysRegular/DaysRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'als_rubl';
+  src: url('../fonts/rouble/rouble-webfont.eot');
+  src: url('../fonts/rouble/rouble-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rouble/rouble-webfont.woff2') format('woff2'),
+  url('../fonts/rouble/rouble-webfont.woff') format('woff'),
+  url('../fonts/rouble/rouble-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -110,8 +123,11 @@
   margin: 0;
   padding: 0;
 }
-$black: #272727;
-
+@mixin ptSansCaptBold ($size, $color) {
+  font-family: "PT Sans Caption Bold";
+  font-size: $size;
+  color: $color;
+}
 
 
 // main *************************************************************************//
@@ -133,9 +149,13 @@ html {
 	width: 100%;
 }
 .main_container {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
   padding: 0 10px 0 10px;
+}
+.container_title {
+  @include ptSansCaptBold (36px, #261e24);
+  margin: 0px;
 }
 
 

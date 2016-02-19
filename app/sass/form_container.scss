@@ -20,7 +20,7 @@
 .shadow_block {
   position: relative;
   left: -89px;
-  top: -169px;
+  top: -43px;
   width: 887px;
   min-height: 562px;
   background-color: black;
@@ -48,8 +48,8 @@
 }
 .disc_title {
   position: relative;
-  margin: 127px 0px 0px 0px;
-  @include ptSansCaptBold (36px, #261e24);
+  top: 110px;
+  //margin-top: 127px;
   z-index: 3;
 }
 .disc_text {
@@ -82,7 +82,7 @@
   width: 166px;
   line-height: 18px;
   margin-left: 3px;
-  @include ptSansReg(18px, #827d80);
+  @include ptSansReg(18px, white);
 }
 .contacts_input {
   width: 216px;
@@ -92,6 +92,7 @@
   padding-right: 15px;
   border-radius: 3px;
   border: none;
+  @include ptSansReg(16px, #767676);
 }
 .btn_animation {
   width: 148px;
@@ -112,5 +113,18 @@
 .form_footer_text {
   display: block;
   margin-top: 12px;
-  @include ptSansReg(18px, white);
+  margin-left: 14px;
+  @include ptSansReg(16px, white);
+  text-decoration: underline;
+  cursor: pointer;
+  &:before {
+    position: relative;
+    left: -12px;
+    display: inline-block;
+    content: "";
+    width: 11px;
+    height: 15px;
+    background: url("../img/lock.png");
+  }
 }
+

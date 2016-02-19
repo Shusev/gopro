@@ -1,4 +1,84 @@
+.rouble {
+  font-family: 'als_rubl';
+}
+
 .prices_container {
-  min-height: 500px;
+  min-height: 354px;
   background-color: white;
+}
+
+.ttt {
+  height: 100px;
+}
+
+.prices_title {
+  position: relative;
+  top: 60px;
+}
+
+.table_prices {
+  position: relative;
+  width: 100%;
+  z-index: 123;
+  font-family: "PT Sans Regular";
+  font-size: 18px;
+  color: #261e24;
+}
+.table_prices tr {
+  cursor: pointer;
+  height: 27px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.table_prices tr:first-child {
+  height: 60px;
+  border-bottom: 2px solid #c2b3b4;
+  cursor: default;
+  vertical-align: bottom;
+  padding-bottom: 15px;
+}
+.table_prices td:first-child {
+  width: 185px;
+}
+.table_prices td:nth-child(2) {
+  width: 85px;
+}
+.table_prices td:nth-child(3) {
+  width: 75px;
+  text-align: right;
+}
+.table_prices td:nth-child(4) {
+  width: 120px;
+  text-align: right;
+}
+.table_prices td:nth-child(5) {
+  width: 95px;
+  text-align: right;
+}
+.table_prices td:nth-child(6) {
+  width: 110px;
+  text-align: right;
+}
+.table_prices td:nth-child(7) {
+  width: 90px;
+  text-align: right;
+}
+
+.tbl {
+  position: absolute;
+  width: 100%;
+}
+.tbl tr {
+  height: 27px;
+}
+.tbl tr:first-child {
+  height: 60px;
+}
+.tbl td {
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
