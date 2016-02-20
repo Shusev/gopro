@@ -1,0 +1,42 @@
+.footer {
+  height: 320px;
+  position: relative;
+}
+
+.footer_info, .work_time, .telephone, .address_name {
+  margin: 0px;
+  list-style: none;
+}
+
+.work_time, .telephone, .address_name {
+  padding-left: 35px;
+}
+
+.footer_info {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 64px;
+  padding-top: 32px;
+  top: -320px;
+  width: 411px;
+  height: 288px;
+  font-family: "PT Sans Regular";
+  font-size: 18px;
+  color: #9d9c9f;
+  background-color: rgba(0, 0, 0, 0.8);
+  line-height: 28px;
+}
+.footer_info ul {
+  color: white;
+}
+
+iframe {
+  height: 320px;
+  position: relative;
+  top: 4px;
+}
+
+.mail_address {
+  text-decoration: underline;
+}
