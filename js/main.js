@@ -3,18 +3,25 @@ $(document).ready(function(){
     //наведение на социалки
     $(".vk, .vk_tab").hover(
         function(){
-            $(".vk_tab").css("background-color","#527498");
+            //$(".vk_tab").css("background-color","#527498");
+            //$(".vk_tab").append("<style>.vk_tab:hover{color: white;} .vk_tab:hover:before{-webkit-transform: scaleY(1); transform: scaleY(1);}</style>");
+            //$(".vk_tab").append("<style>.vk_tab:hover:before{-webkit-transform: scaleY(1); transform: scaleY(1);}</style>");
+            $(".vk").append('<style>.vk:before{opacity: 0;}</style>');
         },
         function(){
-            $(".vk_tab").css("background-color","black");
+            //$(".vk_tab").css("background-color","black");
+            $(".vk").append('<style>.vk:before{opacity: 1;}</style>');
         }
     );
     $(".mail, .mail_tab").hover(
         function(){
-            $(".mail_tab").css("background-color","#ef6210");
+    //        $(".mail_tab").css("background-color","#ef6210");
+            $(".mail").append('<style>.mail:before{opacity: 0;}</style>');
+    //
         },
         function(){
-            $(".mail_tab").css("background-color","black");
+    //        $(".mail_tab").css("background-color","black");
+            $(".mail").append('<style>.mail:before{opacity: 1;}</style>');
         }
     );
 
@@ -43,4 +50,24 @@ $(document).ready(function(){
         );
     }
 
+    //Scroll map
+
+    scroll_anchor($(".address"));
+    scroll_anchor($(".discounts"));
+    scroll_anchor($(".prices"));
+    scroll_anchor($(".contacts"));
+    scroll_anchor($(".connect_block_btn"));
+
+
+    function scroll_anchor(target) {
+        target.click(function (event) {
+            event.preventDefault();
+            //забираем идентификатор бока с атрибута href
+            var id = $(this).attr("href"),
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+                top = $(id).offset().top;
+            //анимируем переход на расстояние - top за 1500 мс
+            $("body,html").animate({scrollTop: top}, 1500);
+        });
+    }
 });

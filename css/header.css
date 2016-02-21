@@ -1,4 +1,8 @@
 .header {
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
   min-height: 97px;
   background-color: black;
   border-top: 2px solid #ef6210;
@@ -27,32 +31,104 @@
   display: inline-block;
   width: 43px;
   height: 45px;
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  vertical-align: middle;
+  -moz-transform: translateZ(0) skew(-20deg);
+  -o-transform: translateZ(0) skew(-20deg);
+  -webkit-transform: translateZ(0) skew(-20deg);
+  transform: translateZ(0) skew(-20deg);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
-.mail_tab:hover {
-  background-color: #ef6210;
+
+.mail_tab:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ef6210;
+  -moz-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.mail_tab:hover, .mail_tab:focus, .mail_tab:active {
+  color: white;
+}
+
+.mail_tab:hover:before, .mail_tab:focus:before, .mail_tab:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 .vk_tab {
   display: inline-block;
   width: 43px;
   height: 45px;
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  vertical-align: middle;
+  -moz-transform: translateZ(0) skew(-20deg);
+  -o-transform: translateZ(0) skew(-20deg);
+  -webkit-transform: translateZ(0) skew(-20deg);
+  transform: translateZ(0) skew(-20deg);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
-.vk_tab:hover {
-  background-color: #527498;
+
+.vk_tab:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #527498;
+  -moz-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.vk_tab:hover, .vk_tab:focus, .vk_tab:active {
+  color: white;
+}
+
+.vk_tab:hover:before, .vk_tab:focus:before, .vk_tab:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 .vk {
@@ -66,6 +142,20 @@
   margin-left: 10px;
   background: url("../img/vk.png") no-repeat;
 }
+.vk:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.vk:hover:before {
+  opacity: 0;
+}
 
 .mail {
   display: inline-block;
@@ -77,6 +167,20 @@
   margin-top: 20px;
   margin-left: 10px;
   background: url("../img/mail.png") no-repeat;
+}
+.mail:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.mail:hover:before {
+  opacity: 0;
 }
 
 .address {

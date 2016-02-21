@@ -38,20 +38,20 @@ html
 					a(href="#" target="_blank")
 						.mail_tab
 						.mail
-				span.address г. Чебоксары, ул. Федора Гладкова, д.3
+				a(href="#map").address г. Чебоксары, ул. Федора Гладкова, д.3
 
 
 				.connect_block_links
 					span.phone 8 (352) 608-777
-					a(href="#").discounts Скидки
-					a(href="#").prices Цены
-					a(href="#").contacts Контакты
+					a(href="#connect").discounts Скидки
+					a(href="#prices").prices Цены
+					a(href="#map").contacts Контакты
 		.header_container
 			.main_container.clearfix
 				.connect_block.clearfix
 					h1.connect_block_title Не заводится авто?<br> Нет заряда аккумулятора?
 					h2.connect_block_description Ремонт стартеров, генераторов и агрегатов любой сложности от 400 руб.
-					a(href="#").connect_block_btn связаться
+					a(href="#connect").connect_block_btn связаться
 		.service_container
 			.main_container.clearfix
 				.service
@@ -70,7 +70,7 @@ html
 					.service4_img
 					span.service_title Универсальность
 					span.service_text Ремонтируем стартеры и генераторы любого вида техники
-		.form_container
+		.form_container#connect
 			.main_container.clearfix
 				h2.disc_title.container_title Скидки на ремонт
 				//span.disc_text При оформлении скидки вы получаете разовую скидку на ремонт стартера, генератора или агрегата целиком. <br><br><font color="#ef6210">Внимание!</font> Акции и размеры скидок периодически меняются для разных услуг.
@@ -87,7 +87,7 @@ html
 										input(type="submit" value="получить скидку" class="submit_btn hvr-sweep-to-right")
 								span.form_footer_text Политика конфиденциальности
 					.starter_img
-		.prices_container
+		.prices_container#prices
 			.main_container.clearfix.ttt
 				h2.prices_title.container_title Цены на услуги
 			table.tbl
@@ -212,7 +212,7 @@ html
 						img(src="img/certificate_1.png" alt="certificate_1" width="379" height="516")
 					.certificate
 						img(src="img/certificate_2.png" alt="certificate_2" width="379" height="516")
-		.footer
+		.footer#map
 			iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.5218552972037!2d47.251937287836064!3d56.11196853261634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a37c26de23837%3A0x6901c03829e2c7e6!2z0YPQuy4g0KTQtdC00L7RgNCwINCT0LvQsNC00LrQvtCy0LAsIDMsINCn0LXQsdC-0LrRgdCw0YDRiywg0KfRg9Cy0LDRiNGB0LrQsNGPINCg0LXRgdC_LiwgNDI4MDAz!5e0!3m2!1sru!2sru!4v1455998991837" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen)
 			ul.footer_info
 				li Адрес
