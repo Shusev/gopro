@@ -149,14 +149,18 @@ html {
 	width: 100%;
 }
 .main_container {
+  position: relative;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px 0 10px;
 }
 .container_title {
   @include ptSansCaptBold (36px, #261e24);
-  margin: 0px;
+  margin: 0 0px 32px 0px;
+  line-height: 36px;
 }
-
+.content_container {
+  margin-bottom: 125px;
+}
 
 

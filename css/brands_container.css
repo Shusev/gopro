@@ -1,11 +1,5 @@
 .brands_container {
-  min-height: 450px;
   background-color: white;
-}
-
-.brand_title {
-  position: relative;
-  top: 70px;
 }
 
 .brand {
@@ -23,8 +17,4 @@
 }
 .brand:nth-child(5) {
   margin-left: 0px;
-}
-
-.brands_imgs {
-  margin-top: 100px;
 }

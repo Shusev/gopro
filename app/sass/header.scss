@@ -19,13 +19,14 @@
   top: 0px;
   z-index: 999;
   width: 100%;
-  min-height: 97px;
+  min-height: 96px;
   background-color: black;
   border-top: 2px solid #ef6210;
 }
 .logo {
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 26px;
+  line-height: 36px;
   @include furore(36px, #f0efea);
 }
 .soc_btns {
@@ -52,6 +53,7 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  left: 21px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.2s;
@@ -100,6 +102,7 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  left: 19px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.2s;
@@ -139,8 +142,8 @@
 .vk {
   display: inline-block;
   position: relative;
-  top: -49px;
-  left: 4px;
+  top: -44px;
+  left: 21px;
   width: 14px;
   height: 18px;
   margin-top: 16px;
@@ -164,8 +167,8 @@
 .mail {
   display: inline-block;
   position: relative;
-  top: -50px;
-  left: -1px;
+  top: -46px;
+  left: 20px;
   width: 20px;
   height: 14px;
   margin-top: 20px;
@@ -189,7 +192,7 @@
 .address {
   float: right;
   margin-top: 13px;
-  margin-right: 13px;
+  margin-right: -6px;
   text-align: right;
   @include ptSansReg(14px, #f0efea);
   text-decoration: underline;
@@ -213,10 +216,11 @@
   }
   .phone {
     @include ptSansBold (16px, #ef6210);
+    margin-right: 24px;
   }
   .prices {
     display: inline-block;
-    margin-left: 23px;
+    margin-right: 22px;
     height: 27px;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -229,7 +233,7 @@
   }
   .discounts {
     display: inline-block;
-    margin-left: 23px;
+    margin-right: 23px;
     height: 27px;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -242,7 +246,7 @@
   }
   .contacts {
     display: inline-block;
-    margin-left: 23px;
+    margin-right: -2px;
     height: 27px;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;

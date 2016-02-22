@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    var fadeInTime = 400,
+        fadeOutTime = 400;
+
     //наведение на социалки
     $(".vk, .vk_tab").hover(
         function(){
@@ -68,6 +71,104 @@ $(document).ready(function(){
                 top = $(id).offset().top;
             //анимируем переход на рассто€ние - top за 1500 мс
             $("body,html").animate({scrollTop: top}, 1500);
+        });
+    }
+
+    //politic cart fade
+    $(".form_footer_btn").on('click', function(){
+        $(".starter_img").fadeOut(fadeOutTime);
+        setTimeout(function () {
+            $(".politic_cart").fadeIn(fadeInTime);
+        }, fadeOutTime);
+        setTimeout(function () {
+            $(".politic_cart").fadeOut(fadeOutTime);
+            setTimeout(function () {
+                $(".starter_img").fadeIn(fadeInTime);
+            }, fadeOutTime);
+        }, 12000);
+    });
+
+    //send mail
+
+    send_mail($("#name"), $("#phone"), $("#send_form"), $(".name_tooltip"), $(".phone_tooltip"), "center left", "center right");
+
+
+    function send_mail(name, phone, form_name, name_target, phone_target, my, at) {
+        var name_pattern = /^[\u0410-\u044Fa-zA-Z]{2,20}$/,
+            phone_pattern = /^[0-9-]{10,11}$/i;
+        phone.blur(function () {
+            if (phone.val() != "") {
+                if (phone.val().search(phone_pattern) == 0) {
+                    phone.removeClass("error").addClass("okay");
+                }
+                else {
+
+                    tooltip(phone_target, "¬ведите номер", my, at);
+                    phone.addClass("error");
+                    phone.removeClass("okay").addClass("error");
+                }
+            }
+            else {
+                tooltip(phone_target, "¬ведите номер", my, at);
+                phone.removeClass("okay").addClass("error");
+            }
+        });
+        name.blur(function () {
+            if (name.val() != "") {
+                if (name.val().search(name_pattern) == 0) {
+                    name.removeClass("error").addClass("okay");
+                }
+                else {
+                    tooltip(name_target, "¬ведите им€", my, at);
+                    name.addClass("error");
+                }
+            }
+            else {
+                tooltip(name_target, "¬ведите им€", my, at);
+                name.removeClass("okay").addClass("error");
+            }
+        });
+        form_name.on("submit", function (event) {
+            event.preventDefault();
+            if (name.hasClass("okay") && phone.hasClass("okay")) {
+                $.ajax({
+                    url: "../avstarter/mail.php",
+                    type: "POST",
+                    data: form_name.serialize(),
+                    success: function () {
+                        form_name.trigger("reset");
+                        $(".success").fadeIn("slow");
+                        name.removeClass("okay").removeClass("error");
+                        phone.removeClass("okay").removeClass("error");
+                        setTimeout(function () {
+                            $(".success").fadeOut("slow");
+                        }, 1500);
+                    },
+                    error: function () {
+                        form_name.trigger("reset");
+                        name.removeClass("okay").removeClass("error");
+                        phone.removeClass("okay").removeClass("error");
+                    }
+                });
+            }
+            else {
+            }
+        });
+    }
+
+    function tooltip(target, text, my, at) {
+        target.qtip({
+            content: {
+                text: text
+            },
+            position: {
+                my: my,
+                at: at,
+                target: target
+            },
+            show: {
+                ready: true
+            }
         });
     }
 });

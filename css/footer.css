@@ -13,18 +13,15 @@
 }
 
 .footer_info {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  float: right;
   padding-left: 64px;
   padding-top: 32px;
-  top: -320px;
   width: 411px;
   height: 288px;
   font-family: "PT Sans Regular";
   font-size: 18px;
   color: #9d9c9f;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   line-height: 28px;
 }
 .footer_info ul {
@@ -39,4 +36,13 @@ iframe {
 
 .mail_address {
   text-decoration: underline;
+}
+
+.main_container_footer {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -470px;
+  width: 940px;
+  padding: 0 10px 0 10px;
 }

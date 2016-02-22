@@ -104,6 +104,7 @@ html {
 }
 
 .main_container {
+  position: relative;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px 0 10px;
@@ -113,5 +114,10 @@ html {
   font-family: "PT Sans Caption Bold";
   font-size: 36px;
   color: #261e24;
-  margin: 0px;
+  margin: 0 0px 32px 0px;
+  line-height: 36px;
+}
+
+.content_container {
+  margin-bottom: 125px;
 }

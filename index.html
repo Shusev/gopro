@@ -11,8 +11,6 @@
 		<link rel="shortcut icon" href="img/favicon.ico">
 		<meta name="viewport" content="width=960">
 		<link rel="stylesheet" href="css/style.css" type="text/css">
-		<!--font-awesome-->
-		<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" type="text/css">
 		<!--qtip2-->
 		<link rel="stylesheet" href="app/bower_components/qtip2/jquery.qtip.css" type="text/css">
 		<!--normalize-->
@@ -27,10 +25,10 @@
 		<div class="header">
 			<div class="main_container clearfix"><span class="logo">Автостартер</span>
 				<div class="soc_btns"><a href="#" target="_blank">
-						<div class="vk_tab"></div>
-						<div class="vk"></div></a><a href="#" target="_blank">
 						<div class="mail_tab"></div>
-						<div class="mail"></div></a></div><a href="#map" class="address">г. Чебоксары, ул. Федора Гладкова, д.3</a>
+						<div class="mail"></div></a><a href="#" target="_blank">
+						<div class="vk_tab"></div>
+						<div class="vk"></div></a></div><a href="#map" class="address">г. Чебоксары, ул.Федора Гладкова, д.3</a>
 				<div class="connect_block_links"><span class="phone">8 (352) 608-777</span><a href="#connect" class="discounts">Скидки</a><a href="#prices" class="prices">Цены</a><a href="#map" class="contacts">Контакты</a></div>
 			</div>
 		</div>
@@ -42,7 +40,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="service_container">
+		<div class="service_container content_container">
 			<div class="main_container clearfix">
 				<div class="service">
 					<div class="service1_img"></div><span class="service_title">Профессионализм</span><span class="service_text">Ремонт стартеров и генераторов производится только сертифицированными специалистами</span>
@@ -58,31 +56,30 @@
 				</div>
 			</div>
 		</div>
-		<div id="connect" class="form_container">
+		<div id="connect" class="form_container content_container">
 			<div class="main_container clearfix">
-				<h2 class="disc_title container_title">Скидки на ремонт</h2>
+				<h2 class="container_title discount_title">Скидки на ремонт</h2>
 				<!--span.disc_text При оформлении скидки вы получаете разовую скидку на ремонт стартера, генератора или агрегата целиком. <br><br><font color="#ef6210">Внимание!</font> Акции и размеры скидок периодически меняются для разных услуг.-->
-				<div class="shadow_block">
-					<div class="form_block">
-						<div class="form_block_inner">
-							<div class="form_block_title"><span class="disc_percent">10%</span><span class="disc_percent_text">скидка на ремонт стартера, генератора или агрегата</span>
-								<form id="send_form" action="" method="POST">
-									<input id="name" name="name" type="text" placeholder="Как к вам обращаться?" qtip-position="left" qtip-content="Введите имя" class="contacts_input name_tooltip">
-									<input id="phone" name="phone" type="text" placeholder="Ваш контактный телефона" qtip-position="left" qtip-content="Введите номер" class="contacts_input phone_tooltip">
-									<div class="btn_animation">
-										<input type="submit" value="получить скидку" class="submit_btn hvr-sweep-to-right">
-									</div>
-								</form><span class="form_footer_text">Политика конфиденциальности</span>
-							</div>
+				<div class="form_block">
+					<div class="form_block_inner">
+						<div class="form_block_title"><span class="disc_percent">10%</span><span class="disc_percent_text">скидка на ремонт стартера, генератора или агрегата</span>
+							<form id="send_form" action="" method="POST">
+								<input id="name" name="name" type="text" placeholder="Как к вам обращаться?" qtip-position="left" qtip-content="Введите имя" class="contacts_input name_tooltip">
+								<input id="phone" name="phone" type="text" placeholder="Ваш контактный телефона" qtip-position="left" qtip-content="Введите номер" class="contacts_input phone_tooltip">
+								<div class="btn_animation">
+									<input type="submit" value="получить скидку" class="submit_btn hvr-sweep-to-right">
+								</div>
+							</form><span class="form_footer_btn">Политика конфиденциальности</span>
 						</div>
 					</div>
-					<div class="starter_img"></div>
 				</div>
+				<div class="starter_img"></div>
+				<div class="politic_cart"><span class="politic_cart_text">Мы не продаем, не обмениваем и не даем в аренду контактную информацию пользователей. В исключительных обстоятельствах мы можем раскрыть вашу персональную информацию, если этого требует закон или в целях защиты себя и других от противоправных действий или других опасностей.</span></div>
 			</div>
 		</div>
-		<div id="prices" class="prices_container">
+		<div id="prices" class="prices_container content_container">
 			<div class="main_container clearfix ttt">
-				<h2 class="prices_title container_title">Цены на услуги</h2>
+				<h2 class="container_title">Цены на услуги</h2>
 			</div>
 			<table class="tbl">
 				<tr>
@@ -202,9 +199,9 @@
 				</table>
 			</div>
 		</div>
-		<div class="brands_container">
+		<div class="brands_container content_container">
 			<div class="main_container clearfix">
-				<h2 class="brand_title container_title">Бренды</h2>
+				<h2 class="container_title">Бренды</h2>
 				<div class="brands_imgs">
 					<div class="brand"><img src="img/bosch.png" alt="bosch" width="227" height="110"></div>
 					<div class="brand"><img src="img/valeo.png" alt="valeo" width="227" height="110"></div>
@@ -216,9 +213,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="certificate_container">
+		<div class="certificate_container content_container">
 			<div class="main_container clearfix">
-				<h2 class="certificate_title container_title">Наши сертификаты</h2>
+				<h2 class="container_title">Наши сертификаты</h2>
 				<div class="certificate_imgs">
 					<div class="certificate"><img src="img/certificate_1.png" alt="certificate_1" width="379" height="516"></div>
 					<div class="certificate"><img src="img/certificate_2.png" alt="certificate_2" width="379" height="516"></div>
@@ -226,42 +223,45 @@
 			</div>
 		</div>
 		<div id="map" class="footer">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.5218552972037!2d47.251937287836064!3d56.11196853261634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a37c26de23837%3A0x6901c03829e2c7e6!2z0YPQuy4g0KTQtdC00L7RgNCwINCT0LvQsNC00LrQvtCy0LAsIDMsINCn0LXQsdC-0LrRgdCw0YDRiywg0KfRg9Cy0LDRiNGB0LrQsNGPINCg0LXRgdC_LiwgNDI4MDAz!5e0!3m2!1sru!2sru!4v1455998991837" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
-			<ul class="footer_info">
-				<li>Адрес
-					<ul class="address_name">
-						<li>ул. Ф. Гладкова, д. 3</li>
-					</ul>
-				</li>
-				<li>Время работы
-					<ul class="work_time">
-						<li>
-							<table>
-								<tr>
-									<td>будни</td>
-									<td>9:00 до 18:00</td>
-								</tr>
-								<tr>
-									<td>суббота</td>
-									<td>10:00 до 16:00</td>
-								</tr>
-								<tr>
-									<td>воскресенье</td>
-									<td>выходной</td>
-								</tr>
-							</table>
-						</li>
-					</ul>
-				</li>
-				<li>Контакты
-					<ul class="telephone">
-						<li>8 (352) 608 - 777</li>
-						<li class="mail_address">inbox@avstarter.ru</li>
-					</ul>
-				</li>
-			</ul>
+			<!--iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.5218552972037!2d47.251937287836064!3d56.11196853261634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a37c26de23837%3A0x6901c03829e2c7e6!2z0YPQuy4g0KTQtdC00L7RgNCwINCT0LvQsNC00LrQvtCy0LAsIDMsINCn0LXQsdC-0LrRgdCw0YDRiywg0KfRg9Cy0LDRiNGB0LrQsNGPINCg0LXRgdC_LiwgNDI4MDAz!5e0!3m2!1sru!2sru!4v1455998991837" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen)--><script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Mt2-_e7XZFuPN0N8FsY6QAFPNPhAFXPK&width=100%&height=320&lang=ru_RU&sourceType=constructor"></script>
+			<div class="main_container_footer clearfix">
+				<ul class="footer_info">
+					<li>Адрес
+						<ul class="address_name">
+							<li>ул. Ф. Гладкова, д. 3</li>
+						</ul>
+					</li>
+					<li>Время работы
+						<ul class="work_time">
+							<li>
+								<table>
+									<tr>
+										<td>будни</td>
+										<td>9:00 до 18:00</td>
+									</tr>
+									<tr>
+										<td>суббота</td>
+										<td>10:00 до 16:00</td>
+									</tr>
+									<tr>
+										<td>воскресенье</td>
+										<td>выходной</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+					</li>
+					<li>Контакты
+						<ul class="telephone">
+							<li>8 (352) 608 - 777</li>
+							<li class="mail_address">inbox@avstarter.ru</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<script src="app/bower_components/jquery/jquery.js"></script>
+		<script src="app/bower_components/qtip2/jquery.qtip.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

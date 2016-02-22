@@ -14,43 +14,79 @@
   color: $color;
 }
 .form_container {
-  min-height: 562px;
+  position: relative;
+  //min-height: 566px;
   background-color: white;
 }
 .shadow_block {
   position: relative;
   left: -89px;
-  top: -43px;
+  top: 0px;
   width: 887px;
-  min-height: 562px;
+  min-height: 566px;
   background-color: black;
   -webkit-box-shadow: inset 5px 528px 65px 36px rgba(255,255,255,1);
   -moz-box-shadow: inset 5px 528px 65px 36px rgba(255,255,255,1);
   box-shadow: inset 5px 528px 65px 36px rgba(255,255,255,1);
 }
 .form_block {
-  position: absolute;
-  top: 188px;
-  left: 90px;
-  width: 332px;
-  min-height: 374px;
+  position: relative;
+  //top: 28px;
+  //left: 90px;
+  float: left;
+  //display: inline-block;
+  width: 350px;
+  min-height: 314px;
   background-color: #261e24;
+  //background-color: yellow;
   border-radius: 3px;
+  padding: 30px 0px 30px 0px;
   z-index: 2;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -100px;
+    bottom: 0;
+    display: block;
+    width: 937px;
+    height: 75px;
+    background: url("../img/shadow.png");
+    z-index: 1;
+  }
 }
 .starter_img {
   width: 447px;
   height: 294px;
-  top: 300px;
-  left: 385px;
+  bottom: -32px;
+  left: 360px;
   position: absolute;
   background: url("../img/starter.png") no-repeat;
+  z-index: 3;
+}
+.politic_cart {
+  //float: left;
+  display: none;
+  //display: block;
+  position: absolute;
+  //left: 0;
+  left: 350px;
+  bottom: 0;
+  //top: 387px;
+  //left: 809px;
+  @include ptSansReg (14px, white);
+  width: 391px;
+  height: 179px;
+  background: url("../img/politic_cart.png") no-repeat;
+}
+.politic_cart_text {
+  display: block;
+  padding: 35px 40px 30px 40px;
 }
 .disc_title {
-  position: relative;
-  top: 110px;
-  //margin-top: 127px;
-  z-index: 3;
+  //position: absolute;
+  //margin-top: 121px;
+  //z-index: 3;
 }
 .disc_text {
   display: block;
@@ -63,29 +99,27 @@
   z-index: 3;
 }
 .form_block_inner {
-  width: 250px;
+  width: 268px;
   min-height: 256px;
-  padding: 27px;
+  padding: 31px 29px;
   background-color: #3c353a;
   border-radius: 3px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 29px;
 }
 .disc_percent {
   float: left;
-  line-height: 40px;
-  @include days(40px, #ef6210);
+  line-height: 42px;
+  @include days(57px, #ef6210);
 }
 .disc_percent_text {
   float: left;
-  width: 166px;
-  line-height: 18px;
-  margin-left: 3px;
-  @include ptSansReg(18px, white);
+  width: 148px;
+  line-height: 16px;
+  @include ptSansReg(16px, white);
 }
 .contacts_input {
-  width: 216px;
+  width: 233px;
   min-height: 38px;
   margin-top: 15px;
   padding-left: 15px;
@@ -110,7 +144,7 @@
   background: transparent;
   border: none;
 }
-.form_footer_text {
+.form_footer_btn {
   display: block;
   margin-top: 12px;
   margin-left: 14px;

@@ -1,6 +1,6 @@
 .header_container {
-  min-height: 526px;
-  margin-top: 99px;
+  min-height: 498px;
+  margin-top: 98px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 0% 75%;
@@ -8,8 +8,8 @@
 }
 
 .connect_block {
-  width: 402px;
-  margin-top: 125px;
+  width: 50%;
+  margin-top: 127px;
 }
 
 .connect_block_title {
@@ -17,10 +17,11 @@
   font-family: "PT Sans Caption Bold";
   font-size: 30px;
   color: white;
+  line-height: 33px;
 }
 
 .connect_block_description {
-  margin: 7px 0px 0px;
+  margin: 20px 0px 0px;
   font-family: "PT Sans Bold";
   font-size: 20px;
   color: white;
@@ -30,7 +31,7 @@
   float: left;
   width: 141px;
   min-height: 42px;
-  margin-top: 40px;
+  margin-top: 41px;
   background-color: #ef6210;
   border-radius: 3px;
   text-align: center;

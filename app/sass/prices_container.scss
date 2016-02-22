@@ -14,16 +14,11 @@
 .prices_container {
   min-height: 354px;
   background-color: white;
-}
-.ttt {
-  height: 100px;
-}
-.prices_title {
   position: relative;
-  top: 60px;
 }
 .table_prices{
   position: relative;
+  top: -17px;
   width: 100%;
   z-index: 123;
   @include ptSansReg(18px, #261e24);
@@ -74,6 +69,7 @@
 }
 .tbl {
   position: absolute;
+  top: 51px;
   width: 100%;
   & tr {
     height: 27px;

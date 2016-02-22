@@ -3,20 +3,15 @@
   background-color: white;
 }
 
-.certificate_title {
-  position: relative;
-  top: 43px;
+.certificate_imgs {
+  margin-left: -10px;
 }
 
 .certificate {
   float: left;
-  width: 379px;
-  height: 516px;
-  margin-top: 73px;
-  -webkit-box-shadow: 11px 71px 48px 12px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 11px 71px 48px 12px rgba(0, 0, 0, 0.2);
-  box-shadow: 11px 71px 48px 12px rgba(0, 0, 0, 0.2);
+  width: 430px;
+  height: 598px;
 }
-.certificate:nth-child(2) {
-  margin-left: 140px;
+.certificate:first-child {
+  margin-right: 50px;
 }

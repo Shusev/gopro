@@ -5,19 +5,12 @@
 .prices_container {
   min-height: 354px;
   background-color: white;
-}
-
-.ttt {
-  height: 100px;
-}
-
-.prices_title {
   position: relative;
-  top: 60px;
 }
 
 .table_prices {
   position: relative;
+  top: -17px;
   width: 100%;
   z-index: 123;
   font-family: "PT Sans Regular";
@@ -68,6 +61,7 @@
 
 .tbl {
   position: absolute;
+  top: 51px;
   width: 100%;
 }
 .tbl tr {
