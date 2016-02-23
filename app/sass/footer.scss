@@ -14,35 +14,16 @@
 .work_time, .telephone, .address_name {
   padding-left: 35px;
 }
-.footer_info {
-  //position: relative;
-  float: right;
-  padding-left: 64px;
-  padding-top: 32px;
-  //top: -320px;
-  width: 411px;
-  height: 288px;
-  @include ptSansReg (18px, #9d9c9f);
-  background-color: rgba(0,0,0,0.9);
-  line-height: 28px;
-  & ul {
-    color: white;
-  }
-}
-iframe {
-  height: 320px;
-  position: relative;
-  top: 4px;
-}
 .mail_address {
   text-decoration: underline;
 }
-.main_container_footer {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  margin-left: -470px;
-  width: 940px;
-  //margin: 0 auto;
-  padding: 0 10px 0 10px;
-}
+//.main_container_footer {
+//  position: absolute;
+//  top: 0px;
+//  left: 50%;
+//  margin-left: -470px;
+//  width: 940px;
+//  //margin: 0 auto;
+//  padding: 0 10px 0 10px;
+//  z-index: 1;
+//}

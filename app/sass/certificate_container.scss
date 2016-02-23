@@ -1,5 +1,10 @@
+@mixin ptSansReg ($size, $color) {
+  font-family: "PT Sans Regular";
+  font-size: $size;
+  color: $color;
+}
 .certificate_container {
-  min-height: 770px;
+  //min-height: 770px;
   background-color: white;
 }
 .certificate_imgs {
@@ -13,4 +18,28 @@
   &:first-child {
     margin-right: 50px;
   }
+}
+.footer_info {
+  position: absolute;
+  right: 0;
+  bottom: -320px;
+  width: 411px;
+  height: 288px;
+  padding-left: 64px;
+  padding-top: 32px;
+  @include ptSansReg (18px, #9d9c9f);
+  background-color: rgba(0,0,0,0.9);
+  line-height: 28px;
+  z-index: 9999;
+  & ul {
+    color: white;
+  }
+}
+.contacts_table__cell--time {
+  padding-left: 20px;
+}
+.contacts_footer--a {
+  margin: 0;
+  padding: 0;
+  @include ptSansReg (18px, white);
 }

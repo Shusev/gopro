@@ -17,6 +17,20 @@
   position: relative;
   //min-height: 566px;
   background-color: white;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    display: block;
+    width: 1169px;
+    height: 95px;
+    background: url("../img/shadow.png");
+    z-index: 1;
+  }
 }
 .shadow_block {
   position: relative;
@@ -31,31 +45,41 @@
 }
 .form_block {
   position: relative;
-  //top: 28px;
-  //left: 90px;
   float: left;
-  //display: inline-block;
   width: 350px;
   min-height: 314px;
   background-color: #261e24;
-  //background-color: yellow;
   border-radius: 3px;
   padding: 30px 0px 30px 0px;
   z-index: 2;
+  margin: auto 0;
 
   &:before {
     content: "";
-    position: absolute;
-    left: -100px;
-    bottom: 0;
     display: block;
-    width: 937px;
-    height: 75px;
-    background: url("../img/shadow.png");
+    position: absolute;
+    left: -359px;
+    bottom: -31px;
+    width: 359px;
+    height: 278px;
+    background: url("../img/starter.png");
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -242px;
+    bottom: 0;
+    width: 242px;
+    height: 341px;
+    background: url("../img/starter2.png");
     z-index: 1;
   }
 }
 .starter_img {
+  display: none;
   width: 447px;
   height: 294px;
   bottom: -32px;
@@ -89,11 +113,12 @@
   //z-index: 3;
 }
 .disc_text {
+  float: left;
   display: block;
-  position: absolute;
-  width: 445px;
-  margin-left: 370px;
-  margin-top: 26px;
+  position: relative;
+  width: 340px;
+  //margin-left: 370px;
+  margin-right: 26px;
   @include ptSansReg (18px, #261e24);
   line-height: 18px;
   z-index: 3;

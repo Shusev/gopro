@@ -11,7 +11,24 @@ html
 		meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
 		title Автостартер
 
-		link(rel='shortcut icon', href='img/favicon.ico')
+		<link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="../img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="../img/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
 		meta(name='viewport' content='width=960')
 		link(rel='stylesheet', href='css/style.css', type='text/css')
 
@@ -30,10 +47,10 @@ html
 			.main_container.clearfix
 				span.logo Автостартер
 				.soc_btns
-					a(href="#" target="_blank")
+					a(href="mailto:inbox@avstarter.ru")
 						.mail_tab
 						.mail
-					a(href="#" target="_blank")
+					a(href="https://vk.com/avstarter" target="_blank")
 						.vk_tab
 						.vk
 				a(href="#map").address г. Чебоксары, ул.Федора Гладкова, д.3
@@ -71,7 +88,7 @@ html
 		.form_container#connect.content_container
 			.main_container.clearfix
 				h2.container_title.discount_title Скидки на ремонт
-				//span.disc_text При оформлении скидки вы получаете разовую скидку на ремонт стартера, генератора или агрегата целиком. <br><br><font color="#ef6210">Внимание!</font> Акции и размеры скидок периодически меняются для разных услуг.
+				span.disc_text При оформлении скидки вы получаете разовую скидку на ремонт стартера, генератора или агрегата целиком. <br><br><font color="#ef6210">Внимание!</font> Акции и размеры скидок периодически меняются для разных услуг. Будьте начеку!;)
 				.form_block
 					.form_block_inner
 						.form_block_title
@@ -87,7 +104,7 @@ html
 				.politic_cart
 					span.politic_cart_text Мы не продаем, не обмениваем и не даем в аренду контактную информацию пользователей. В исключительных обстоятельствах мы можем раскрыть вашу персональную информацию, если этого требует закон или в целях защиты себя и других от противоправных действий или других опасностей.
 		.prices_container#prices.content_container
-			.main_container.clearfix.ttt
+			.main_container.clearfix
 				h2.container_title Цены на услуги
 			table.tbl
 				tr
@@ -203,7 +220,7 @@ html
 						img(src="img/ika.png" alt="ika" width="227" height="110")
 					.brand
 						img(src="img/wai.png" alt="wai" width="227" height="110")
-		.certificate_container.content_container
+		.certificate_container
 			.main_container.clearfix
 				h2.container_title Наши сертификаты
 				.certificate_imgs
@@ -211,10 +228,6 @@ html
 						img(src="img/certificate_1.png" alt="certificate_1" width="379" height="516")
 					.certificate
 						img(src="img/certificate_2.png" alt="certificate_2" width="379" height="516")
-		.footer#map
-			//iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.5218552972037!2d47.251937287836064!3d56.11196853261634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a37c26de23837%3A0x6901c03829e2c7e6!2z0YPQuy4g0KTQtdC00L7RgNCwINCT0LvQsNC00LrQvtCy0LAsIDMsINCn0LXQsdC-0LrRgdCw0YDRiywg0KfRg9Cy0LDRiNGB0LrQsNGPINCg0LXRgdC_LiwgNDI4MDAz!5e0!3m2!1sru!2sru!4v1455998991837" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen)
-			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Mt2-_e7XZFuPN0N8FsY6QAFPNPhAFXPK&width=100%&height=320&lang=ru_RU&sourceType=constructor"></script>
-			.main_container_footer.clearfix
 				ul.footer_info
 					li Адрес
 						ul.address_name
@@ -222,20 +235,25 @@ html
 					li Время работы
 						ul.work_time
 							li
-								table
-									tr
-										td будни
-										td 9:00 до 18:00
-									tr
-										td суббота
-										td 10:00 до 16:00
-									tr
-										td воскресенье
-										td выходной
+								table.contacts_table
+									tr.contacts_table__line
+										td.contacts_table__cell будни
+										td.contacts_table__cell--time 9:00 до 18:00
+									tr.contacts_table__line
+										td.contacts_table__cell суббота
+										td.contacts_table__cell--time 10:00 до 16:00
+									tr.contacts_table__line
+										td.contacts_table__cell воскресенье
+										td.contacts_table__cell--time выходной
 					li Контакты
 						ul.telephone
-							li 8 (352) 608 - 777
-							li.mail_address inbox@avstarter.ru
+							li
+								a(href="skype:+735260877?call").contacts_footer--a 8 (352) 608 - 777
+							li.mail_address
+								a(href="mailto:inbox@avstarter.ru").contacts_footer--a inbox@avstarter.ru
+		.footer#map
+			//iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.5218552972037!2d47.251937287836064!3d56.11196853261634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a37c26de23837%3A0x6901c03829e2c7e6!2z0YPQuy4g0KTQtdC00L7RgNCwINCT0LvQsNC00LrQvtCy0LAsIDMsINCn0LXQsdC-0LrRgdCw0YDRiywg0KfRg9Cy0LDRiNGB0LrQsNGPINCg0LXRgdC_LiwgNDI4MDAz!5e0!3m2!1sru!2sru!4v1455998991837" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen)
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Mt2-_e7XZFuPN0N8FsY6QAFPNPhAFXPK&width=100%&height=320&lang=ru_RU&sourceType=constructor"></script>
 
 		script(src="app/bower_components/jquery/jquery.js")
 		script(src="app/bower_components/qtip2/jquery.qtip.js")

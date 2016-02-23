@@ -114,6 +114,8 @@ html {
   font-family: "PT Sans Caption Bold";
   font-size: 36px;
   color: #261e24;
+  margin: 0;
+  padding: 0;
   margin: 0 0px 32px 0px;
   line-height: 36px;
 }

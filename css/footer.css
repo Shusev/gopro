@@ -12,37 +12,6 @@
   padding-left: 35px;
 }
 
-.footer_info {
-  float: right;
-  padding-left: 64px;
-  padding-top: 32px;
-  width: 411px;
-  height: 288px;
-  font-family: "PT Sans Regular";
-  font-size: 18px;
-  color: #9d9c9f;
-  background-color: rgba(0, 0, 0, 0.9);
-  line-height: 28px;
-}
-.footer_info ul {
-  color: white;
-}
-
-iframe {
-  height: 320px;
-  position: relative;
-  top: 4px;
-}
-
 .mail_address {
   text-decoration: underline;
-}
-
-.main_container_footer {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  margin-left: -470px;
-  width: 940px;
-  padding: 0 10px 0 10px;
 }
