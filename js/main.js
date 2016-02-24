@@ -3,34 +3,27 @@ $(document).ready(function(){
     var fadeInTime = 400,
         fadeOutTime = 400;
 
-    //наведение на социалки
+    //hover socials
     $(".vk, .vk_tab").hover(
         function(){
-            //$(".vk_tab").css("background-color","#527498");
-            //$(".vk_tab").append("<style>.vk_tab:hover, .vk_tab:focus, .vk_tab:active {color: white;} .vk_tab:hover:before, .vk_tab:focus:before, .vk_tab:active:before{-webkit-transform: scaleY(1); transform: scaleY(1);}</style>");
-            //$(".vk_tab").append("<style>.vk_tab:hover:before{-webkit-transform: scaleY(1); transform: scaleY(1);}</style>");
             $(".vk").append('<style>.vk:before{opacity: 0;}</style>');
         },
         function(){
-            //$(".vk_tab").css("background-color","black");
+            $(".vk_tab").css("background-color","black");
             $(".vk").append('<style>.vk:before{opacity: 1;}</style>');
         }
     );
     $(".mail, .mail_tab").hover(
         function(){
-    //        $(".mail_tab").css("background-color","#ef6210");
             $(".mail").append('<style>.mail:before{opacity: 0;}</style>');
-    //
         },
         function(){
-    //        $(".mail_tab").css("background-color","black");
             $(".mail").append('<style>.mail:before{opacity: 1;}</style>');
         }
     );
 
-    //hover строк таблицы
+    //hover table prices
 
-    //hover_tr($(".tr1"), $(".td1"));
     hover_tr($(".tr2"), $(".td2"));
     hover_tr($(".tr3"), $(".td3"));
     hover_tr($(".tr4"), $(".td4"));
@@ -65,11 +58,8 @@ $(document).ready(function(){
     function scroll_anchor(target) {
         target.click(function (event) {
             event.preventDefault();
-            //забираем идентификатор бока с атрибута href
             var id = $(this).attr("href"),
-            //узнаем высоту от начала страницы до блока на который ссылается якорь
                 top = $(id).offset().top;
-            //анимируем переход на расстояние - top за 1500 мс
             $("body,html").animate({scrollTop: top}, 1500);
         });
     }
@@ -90,7 +80,7 @@ $(document).ready(function(){
                 prices.addClass("prices_scroll");
                 contacts.removeClass("contacts_scroll");
                 break;
-            case a >= 2850:
+            case (a == $(document).height() - $(window).height()):
                 disc.removeClass("discounts_scroll");
                 prices.removeClass("prices_scroll");
                 contacts.addClass("contacts_scroll");
@@ -106,7 +96,6 @@ $(document).ready(function(){
     //politic cart fade
     $(".form_footer_btn").on('click', function(){
         $(".form_block").addClass("form_block_fade");
-        //$("form_block_fade").fadeOut(fadeInTime);
         setTimeout(function () {
             $(".politic_cart").fadeIn(fadeInTime);
         }, fadeOutTime);
@@ -133,13 +122,13 @@ $(document).ready(function(){
                 }
                 else {
 
-                    tooltip(phone_target, "Введите номер", my, at);
+                    tooltip(phone_target, "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ", my, at);
                     phone.addClass("error");
                     phone.removeClass("okay").addClass("error");
                 }
             }
             else {
-                tooltip(phone_target, "Введите номер", my, at);
+                tooltip(phone_target, "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ", my, at);
                 phone.removeClass("okay").addClass("error");
             }
         });
@@ -149,12 +138,12 @@ $(document).ready(function(){
                     name.removeClass("error").addClass("okay");
                 }
                 else {
-                    tooltip(name_target, "Введите имя", my, at);
+                    tooltip(name_target, "Р’РІРµРґРёС‚Рµ РёРјСЏ", my, at);
                     name.addClass("error");
                 }
             }
             else {
-                tooltip(name_target, "Введите имя", my, at);
+                tooltip(name_target, "Р’РІРµРґРёС‚Рµ РёРјСЏ", my, at);
                 name.removeClass("okay").addClass("error");
             }
         });
