@@ -178,6 +178,7 @@
 .submit_btn {
   background: transparent;
   border: none;
+  outline: none;
 }
 .form_footer_btn {
   display: block;
@@ -196,4 +197,15 @@
     background: url("../img/lock.png");
   }
 }
-
+#connect {
+  position: relative;
+  bottom: 215px;
+}
+.error {
+  background-color: #F5A9A9;
+  color: red;
+}
+.okay {
+  background-color: #81F79F;
+  color: green;
+}
