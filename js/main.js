@@ -7,7 +7,7 @@ $(document).ready(function(){
     $(".vk, .vk_tab").hover(
         function(){
             //$(".vk_tab").css("background-color","#527498");
-            //$(".vk_tab").append("<style>.vk_tab:hover{color: white;} .vk_tab:hover:before{-webkit-transform: scaleY(1); transform: scaleY(1);}</style>");
+            //$(".vk_tab").append("<style>.vk_tab:hover, .vk_tab:focus, .vk_tab:active {color: white;} .vk_tab:hover:before, .vk_tab:focus:before, .vk_tab:active:before{-webkit-transform: scaleY(1); transform: scaleY(1);}</style>");
             //$(".vk_tab").append("<style>.vk_tab:hover:before{-webkit-transform: scaleY(1); transform: scaleY(1);}</style>");
             $(".vk").append('<style>.vk:before{opacity: 0;}</style>');
         },
@@ -76,14 +76,15 @@ $(document).ready(function(){
 
     //politic cart fade
     $(".form_footer_btn").on('click', function(){
-        $(".starter_img").fadeOut(fadeOutTime);
+        $(".form_block").addClass("form_block_fade");
+        //$("form_block_fade").fadeOut(fadeInTime);
         setTimeout(function () {
             $(".politic_cart").fadeIn(fadeInTime);
         }, fadeOutTime);
         setTimeout(function () {
             $(".politic_cart").fadeOut(fadeOutTime);
             setTimeout(function () {
-                $(".starter_img").fadeIn(fadeInTime);
+                $(".form_block").removeClass("form_block_fade");
             }, fadeOutTime);
         }, 12000);
     });

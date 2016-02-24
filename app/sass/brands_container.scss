@@ -3,17 +3,26 @@
 }
 .brand {
   float: left;
-  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 29px;
   width: 227px;
   height: 110px;
   -webkit-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.5);
   box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.5);
-  &:first-child {
-    margin-left: 0px;
+  //&:last-child {
+  //  margin-rihr: 0px;
+  //}
+  &:nth-child(4) {
+    margin-right: 0px;
   }
   &:nth-child(5) {
-    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  &:nth-child(6) {
+    margin-bottom: 0px;
+  }
+  &:nth-child(7) {
+    margin-bottom: 0px;
   }
 }

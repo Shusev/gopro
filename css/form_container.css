@@ -15,6 +15,12 @@
   background: url("../img/shadow.png");
   z-index: 1;
 }
+@media (max-width: 960px) {
+  .form_container:before {
+    width: 960px;
+    background: url("../img/shadow_960.png");
+  }
+}
 
 .shadow_block {
   position: relative;
@@ -47,7 +53,7 @@
   bottom: -31px;
   width: 359px;
   height: 278px;
-  background: url("../img/starter.png");
+  background: url("../img/starter.png") no-repeat;
   z-index: 1;
 }
 .form_block:after {
@@ -58,8 +64,19 @@
   bottom: 0;
   width: 242px;
   height: 341px;
-  background: url("../img/starter2.png");
+  background: url("../img/starter2.png") no-repeat;
   z-index: 1;
+}
+@media (max-width: 960px) {
+  .form_block:after {
+    right: -228px;
+    width: 228px;
+    background: url("../img/starter2_960.png") no-repeat;
+  }
+}
+
+.form_block_fade:before {
+  display: none;
 }
 
 .starter_img {
@@ -76,19 +93,20 @@
 .politic_cart {
   display: none;
   position: absolute;
-  left: 350px;
-  bottom: 0;
+  left: -12px;
+  bottom: -9px;
   font-family: "PT Sans Regular";
   font-size: 14px;
   color: white;
-  width: 391px;
-  height: 179px;
+  width: 388px;
+  height: 188px;
   background: url("../img/politic_cart.png") no-repeat;
+  z-index: 3;
 }
 
 .politic_cart_text {
   display: block;
-  padding: 35px 40px 30px 40px;
+  padding: 30px 20px 30px 30px;
 }
 
 .disc_text {

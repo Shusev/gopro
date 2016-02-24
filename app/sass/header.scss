@@ -54,10 +54,16 @@
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   left: 21px;
+  top: -38px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
+}
+@media (max-width: 960px) {
+  .mail_tab {
+    left: 10px;
+  }
 }
 .mail_tab:before {
   content: "";
@@ -81,10 +87,10 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.mail_tab:hover, .mail_tab:focus, .mail_tab:active {
+.mail_tab:hover, .mail_tab:focus, .mail_tab:active, .mail:hover+.mail_tab {
   color: white;
 }
-.mail_tab:hover:before, .mail_tab:focus:before, .mail_tab:active:before {
+.mail_tab:hover:before, .mail_tab:focus:before, .mail_tab:active:before, .mail:hover+.mail_tab:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
@@ -103,10 +109,16 @@
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   left: 19px;
+  top: -38px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
+}
+@media (max-width: 960px) {
+  .vk_tab {
+    left: 8px;
+  }
 }
 .vk_tab:before {
   content: "";
@@ -130,10 +142,10 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.vk_tab:hover, .vk_tab:focus, .vk_tab:active{
+.vk_tab:hover, .vk_tab:focus, .vk_tab:active, .vk:hover+.vk_tab {
   color: white;
 }
-.vk_tab:hover:before, .vk_tab:focus:before, .vk_tab:active:before {
+.vk_tab:hover:before, .vk_tab:focus:before, .vk_tab:active:before, .vk:hover+.vk_tab:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
@@ -142,13 +154,14 @@
 .vk {
   display: inline-block;
   position: relative;
-  top: -44px;
+  top: 0px;
   left: 21px;
   width: 14px;
   height: 18px;
   margin-top: 16px;
   margin-left: 10px;
   background: url("../img/vk.png") no-repeat;
+  z-index: 1;
   &:before {
     content: "";
     position:absolute;
@@ -164,16 +177,22 @@
     opacity: 0;
   }
 }
+@media (max-width: 960px) {
+  .vk {
+    left: 10px;
+  }
+}
 .mail {
   display: inline-block;
   position: relative;
-  top: -46px;
+  top: 0px;
   left: 20px;
   width: 20px;
   height: 14px;
   margin-top: 20px;
   margin-left: 10px;
   background: url("../img/mail.png") no-repeat;
+  z-index: 1;
   &:before {
     content: "";
     position:absolute;
@@ -187,6 +206,11 @@
   }
   &:hover:before {
     opacity: 0;
+  }
+}
+@media (max-width: 960px) {
+  .mail {
+    left: 9px;
   }
 }
 .address {
@@ -207,6 +231,11 @@
     background: url("../img/map_pin.png");
   }
 }
+@media (max-width: 960px) {
+  .address {
+    margin-right: 5px;
+  }
+}
 .connect_block_links {
   text-align: right;
   text-transform: uppercase;
@@ -221,7 +250,7 @@
   .prices {
     display: inline-block;
     margin-right: 22px;
-    height: 27px;
+    height: 30px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
@@ -234,7 +263,7 @@
   .discounts {
     display: inline-block;
     margin-right: 23px;
-    height: 27px;
+    height: 30px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
@@ -247,7 +276,7 @@
   .contacts {
     display: inline-block;
     margin-right: -2px;
-    height: 27px;
+    height: 30px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
