@@ -53,7 +53,7 @@ $(document).ready(function(){
         );
     }
 
-    //Scroll map
+    //Scroll anchors
 
     scroll_anchor($(".address"));
     scroll_anchor($(".discounts"));
@@ -73,6 +73,35 @@ $(document).ready(function(){
             $("body,html").animate({scrollTop: top}, 1500);
         });
     }
+
+    $(window).scroll(function(){
+        var a = $(window).scrollTop(),
+            disc = $(".discounts"),
+            prices = $(".prices"),
+            contacts = $(".contacts");
+        switch (true) {
+            case (a < 1450 && a >= 850):
+                disc.addClass("discounts_scroll");
+                prices.removeClass("prices_scroll");
+                contacts.removeClass("contacts_scroll");
+                break;
+            case a < 1850 && a >= 1450 :
+                disc.removeClass("discounts_scroll");
+                prices.addClass("prices_scroll");
+                contacts.removeClass("contacts_scroll");
+                break;
+            case a >= 2850:
+                disc.removeClass("discounts_scroll");
+                prices.removeClass("prices_scroll");
+                contacts.addClass("contacts_scroll");
+                break;
+            case a < 850 || (a >=1850 && a < 2850):
+                disc.removeClass("discounts_scroll");
+                prices.removeClass("prices_scroll");
+                contacts.removeClass("contacts_scroll");
+                break;
+        }
+    });
 
     //politic cart fade
     $(".form_footer_btn").on('click', function(){

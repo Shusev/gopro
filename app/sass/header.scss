@@ -260,6 +260,9 @@
       border-bottom: 4px solid #ef6210;
     }
   }
+  .prices_scroll {
+    border-bottom: 4px solid #ef6210;
+  }
   .discounts {
     display: inline-block;
     margin-right: 23px;
@@ -272,6 +275,9 @@
     &:hover {
       border-bottom: 4px solid #ef6210;
     }
+  }
+  .discounts_scroll {
+    border-bottom: 4px solid #ef6210;
   }
   .contacts {
     display: inline-block;
@@ -286,5 +292,8 @@
     &:hover {
       border-bottom: 4px solid #ef6210;
     }
+  }
+  .contacts_scroll {
+    border-bottom: 4px solid #ef6210;
   }
 }
