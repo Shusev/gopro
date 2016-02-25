@@ -1,5 +1,5 @@
 <?
-$adminemail="r.sadyrga@gmail.com";
+$adminemail="inbox@avstarter.ru";
 $date=date("d.m.y");
 $time=date("H:i");
 
@@ -12,12 +12,12 @@ $msg = '
                         <title></title>
                     </head>
                     <body>
-                        <p>Имя: '.$name.'</p>
-                        <p>Почта: '.$phone.'</p>
+                        <p>РРјСЏ: '.$name.'</p>
+                        <p>РџРѕС‡С‚Р°: '.$phone.'</p>
                     </body>
                 </html>';
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=windows-1251' . "\r\n";
+$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
-mail("$adminemail", "$date $time Сообщение от $name", "$msg", "$headers");
+mail("$adminemail", "$date $time РЎРѕРѕР±С‰РµРЅРёРµ РѕС‚ $name", "$msg", "$headers");

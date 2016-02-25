@@ -51,7 +51,7 @@
   }
 }
 .connect_block {
-  width: 50%;
+  width: 45%;
   margin-top: 225px;
 }
 
@@ -60,7 +60,6 @@
   font-family: "PT Sans Caption Bold";
   font-size: 30px;
   color: white;
-  line-height: 33px;
 }
 
 .connect_block_description {
@@ -70,6 +69,15 @@
   color: white;
 }
 
+@media (max-width: 960px) {
+  .connect_block_title {
+    font-size: 18px;
+  }
+
+  .connect_block_description {
+    font-size: 17px;
+  }
+}
 .connect_block_btn {
   float: left;
   width: 141px;

@@ -123,13 +123,13 @@ $(document).ready(function(){
                 }
                 else {
 
-                    tooltip(phone_target, "Введите номер", my, at);
+                    tooltip(phone_target, "введите номер", my, at);
                     phone.addClass("error");
                     phone.removeClass("okay").addClass("error");
                 }
             }
             else {
-                tooltip(phone_target, "Введите номер", my, at);
+                tooltip(phone_target, "введите номер", my, at);
                 phone.removeClass("okay").addClass("error");
             }
         });
@@ -139,19 +139,19 @@ $(document).ready(function(){
                     name.removeClass("error").addClass("okay");
                 }
                 else {
-                    tooltip(name_target, "Введите имя", my, at);
+                    tooltip(name_target, "введите имя", my, at);
                     name.addClass("error");
                 }
             }
             else {
-                tooltip(name_target, "Введите имя", my, at);
+                tooltip(name_target, "введите имя", my, at);
                 name.removeClass("okay").addClass("error");
             }
         });
         form_name.on("submit", function (event) {
             var main_form = $('.form_block_title'),
                 message_form = $('.ok_message');
-                event.preventDefault();
+            event.preventDefault();
             if (name.hasClass("okay") && phone.hasClass("okay")) {
                 $.ajax({
                     url: "../avstarter/mail.php",
@@ -159,10 +159,18 @@ $(document).ready(function(){
                     data: form_name.serialize(),
                     success: function () {
                         form_name.trigger("reset");
+                        main_form.fadeOut(fadeOutTime);
+                        //message_form.fadeIn(fadeInTime);
+                        setTimeout(function () {
+                            message_form.fadeIn(fadeInTime);
+                        }, fadeOutTime);
                         name.removeClass("okay").removeClass("error");
                         phone.removeClass("okay").removeClass("error");
-                        main_form.fadeOut('1s');
-                        message_form.fadeIn('1s');
+                        //setTimeout(function () {
+                        //    $(".success").fadeOut("slow");
+                        //}, 1500);
+                        //main_form.fadeOut('1s');
+                        //message_form.fadeIn('1s');
                     },
                     error: function () {
                         form_name.trigger("reset");

@@ -66,17 +66,25 @@
   }
 }
 .connect_block {
-  width: 50%;
+  width: 45%;
   margin-top: 225px;
 }
 .connect_block_title {
   margin: 0px;
   @include ptSansCaptBold(30px, white);
-  line-height: 33px;
+  //line-height: 33px;
 }
 .connect_block_description {
   margin: 20px 0px 0px;
   @include ptSansBold(20px, white);
+}
+@media (max-width: 960px) {
+  .connect_block_title {
+    font-size: 18px;
+  }
+  .connect_block_description {
+    font-size: 17px;
+  }
 }
 .connect_block_btn {
   float: left;

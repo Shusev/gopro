@@ -80,6 +80,27 @@
 .tbl tr:first-child {
   height: 60px;
 }
+.tbl tr:nth-child(2) {
+  height: 29px;
+}
+.tbl tr:nth-child(3) {
+  height: 23px;
+}
+.tbl tr:nth-child(4) {
+  height: 23px;
+}
+.tbl tr:nth-child(5) {
+  height: 28px;
+}
+.tbl tr:nth-child(6) {
+  height: 28px;
+}
+.tbl tr:nth-child(7) {
+  height: 23px;
+}
+.tbl tr:nth-child(8) {
+  height: 23px;
+}
 .tbl td {
   -webkit-transition: 0.1s;
   -moz-transition: 0.1s;

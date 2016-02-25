@@ -52,6 +52,7 @@
 .form_block {
   position: relative;
   float: left;
+  left: 22px;
   width: 350px;
   height: 318px;
   background-color: #261e24;
@@ -85,8 +86,8 @@
   }
   @media (max-width: 960px) {
     &:after {
-      right: -228px;
-      width: 228px;
+      right: -206px;
+      width: 206px;
       background: url("../img/starter2_960.png") no-repeat;
     }
   }
@@ -110,7 +111,7 @@
 .politic_cart {
   display: none;
   position: absolute;
-  left: -12px;
+  left: 10px;
   bottom: -9px;
   @include ptSansReg (14px, white);
   width: 388px;
@@ -163,7 +164,7 @@
   border: none;
   @include ptSansReg(16px, #767676);
 }
-.btn_animation {
+.btn_form {
   width: 148px;
   min-height: 34px;
   @include ptSansReg(18px, white);
@@ -174,6 +175,12 @@
   margin-right: auto;
   margin-left: auto;
   margin-top: 23px;
+  &:hover {
+    background-color: #ee7e3e;
+  }
+  &:active {
+    background-color: #ce5611;
+  }
 }
 .submit_btn {
   background: transparent;
@@ -204,13 +211,45 @@
 .error {
   background-color: #F5A9A9;
   color: red;
+  & .contacts_input::-webkit-input-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.5s ease;
+  }
+  &.contacts_input::-moz-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.5s ease;
+  }
+  &.contacts_input:-moz-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.5s ease;
+  }
+  &.contacts_input:-ms-input-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.5s ease;
+  }
+  &.contacts_input:focus::-webkit-input-placeholder {
+    text-indent: 500px;
+    transition: text-indent 0.5s ease;
+  }
+  &.contacts_input:focus::-moz-placeholder {
+    text-indent: 500px;
+    transition: text-indent 0.5s ease;
+  }
+  &.contacts_input:focus:-moz-placeholder {
+    text-indent: 500px;
+    transition: text-indent 0.5s ease;
+  }
+  &.contacts_input:focus:-ms-input-placeholder {
+    text-indent: 500px;
+    transition: text-indent 0.5s ease;
+  }
 }
 .okay {
   background-color: #81F79F;
   color: green;
 }
 .ok_message {
-  display: block;
+  display: none;
   @include ptSansReg(16px, white);
   //text-align: center;
 
@@ -224,14 +263,3 @@
     margin-bottom: 16px;
   }
 }
-.form_block_title {
-  display: none;
-}
-
-// Цвета для конпки!!!!!!!1
-//&:hover {
-//  background-color: #ee7e3e;
-//}
-//&:active {
-//  background-color: #ce5611;
-//}

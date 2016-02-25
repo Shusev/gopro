@@ -37,6 +37,7 @@
 .form_block {
   position: relative;
   float: left;
+  left: 22px;
   width: 350px;
   height: 318px;
   background-color: #261e24;
@@ -69,8 +70,8 @@
 }
 @media (max-width: 960px) {
   .form_block:after {
-    right: -228px;
-    width: 228px;
+    right: -206px;
+    width: 206px;
     background: url("../img/starter2_960.png") no-repeat;
   }
 }
@@ -93,7 +94,7 @@
 .politic_cart {
   display: none;
   position: absolute;
-  left: -12px;
+  left: 10px;
   bottom: -9px;
   font-family: "PT Sans Regular";
   font-size: 14px;
@@ -162,7 +163,7 @@
   color: #767676;
 }
 
-.btn_animation {
+.btn_form {
   width: 148px;
   min-height: 34px;
   font-family: "PT Sans Regular";
@@ -175,6 +176,12 @@
   margin-right: auto;
   margin-left: auto;
   margin-top: 23px;
+}
+.btn_form:hover {
+  background-color: #ee7e3e;
+}
+.btn_form:active {
+  background-color: #ce5611;
 }
 
 .submit_btn {
@@ -212,6 +219,38 @@
   background-color: #F5A9A9;
   color: red;
 }
+.error .contacts_input::-webkit-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.5s ease;
+}
+.error.contacts_input::-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.5s ease;
+}
+.error.contacts_input:-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.5s ease;
+}
+.error.contacts_input:-ms-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.5s ease;
+}
+.error.contacts_input:focus::-webkit-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
+}
+.error.contacts_input:focus::-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
+}
+.error.contacts_input:focus:-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
+}
+.error.contacts_input:focus:-ms-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
+}
 
 .okay {
   background-color: #81F79F;
@@ -219,7 +258,7 @@
 }
 
 .ok_message {
-  display: block;
+  display: none;
   font-family: "PT Sans Regular";
   font-size: 16px;
   color: white;
@@ -232,8 +271,4 @@
 .ok_message .ok_message--text {
   display: block;
   margin-bottom: 16px;
-}
-
-.form_block_title {
-  display: none;
 }
