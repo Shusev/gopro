@@ -84,3 +84,9 @@
   font-size: 18px;
   color: white;
 }
+.connect_block_btn:hover {
+  background-color: #ee7e3e;
+}
+.connect_block_btn:active {
+  background-color: #ce5611;
+}

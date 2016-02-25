@@ -89,4 +89,11 @@
   line-height: 42px;
   text-decoration: none;
   @include ptSansReg (18px, white);
+
+  &:hover {
+    background-color: #ee7e3e;
+  }
+  &:active {
+    background-color: #ce5611;
+  }
 }

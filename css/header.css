@@ -223,7 +223,7 @@
 .address:before {
   position: relative;
   left: -12px;
-  bottom: -5px;
+  bottom: -2px;
   display: inline-block;
   content: "";
   width: 11px;

@@ -23,8 +23,7 @@
   z-index: 123;
   @include ptSansReg(18px, #261e24);
   & tr {
-    cursor: pointer;
-    height: 27px;
+    height: 21px;
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s;
     -o-transition: 0.1s;
@@ -34,10 +33,27 @@
       border-bottom: 2px solid #c2b3b4;
       cursor: default;
       vertical-align: bottom;
-      padding-bottom: 15px;
+      td {
+        padding-bottom: 5px;
+      }
     }
-
+    &:nth-child(2) {
+      td {
+        padding-top: 5px;
+      }
+    }
+    &.tr5 {
+      td {
+        padding-top: 5px;
+      }
+    }
+    &.tr6 {
+      td {
+        padding-bottom: 5px;
+      }
+    }
   }
+
   & td {
     &:first-child {
       width: 185px;

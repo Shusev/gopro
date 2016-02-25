@@ -119,6 +119,7 @@ $(document).ready(function(){
             if (phone.val() != "") {
                 if (phone.val().search(phone_pattern) == 0) {
                     phone.removeClass("error").addClass("okay");
+
                 }
                 else {
 
@@ -148,7 +149,9 @@ $(document).ready(function(){
             }
         });
         form_name.on("submit", function (event) {
-            event.preventDefault();
+            var main_form = $('.form_block_title'),
+                message_form = $('.ok_message');
+                event.preventDefault();
             if (name.hasClass("okay") && phone.hasClass("okay")) {
                 $.ajax({
                     url: "../avstarter/mail.php",
@@ -156,12 +159,10 @@ $(document).ready(function(){
                     data: form_name.serialize(),
                     success: function () {
                         form_name.trigger("reset");
-                        $(".success").fadeIn("slow");
                         name.removeClass("okay").removeClass("error");
                         phone.removeClass("okay").removeClass("error");
-                        setTimeout(function () {
-                            $(".success").fadeOut("slow");
-                        }, 1500);
+                        main_form.fadeOut('1s');
+                        message_form.fadeIn('1s');
                     },
                     error: function () {
                         form_name.trigger("reset");

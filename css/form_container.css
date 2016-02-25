@@ -38,7 +38,7 @@
   position: relative;
   float: left;
   width: 350px;
-  min-height: 314px;
+  height: 318px;
   background-color: #261e24;
   border-radius: 3px;
   padding: 30px 0px 30px 0px;
@@ -216,4 +216,24 @@
 .okay {
   background-color: #81F79F;
   color: green;
+}
+
+.ok_message {
+  display: block;
+  font-family: "PT Sans Regular";
+  font-size: 16px;
+  color: white;
+}
+.ok_message .ok_message--title {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+.ok_message .ok_message--text {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.form_block_title {
+  display: none;
 }

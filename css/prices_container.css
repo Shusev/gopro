@@ -18,8 +18,7 @@
   color: #261e24;
 }
 .table_prices tr {
-  cursor: pointer;
-  height: 27px;
+  height: 21px;
   -webkit-transition: 0.1s;
   -moz-transition: 0.1s;
   -o-transition: 0.1s;
@@ -30,7 +29,18 @@
   border-bottom: 2px solid #c2b3b4;
   cursor: default;
   vertical-align: bottom;
-  padding-bottom: 15px;
+}
+.table_prices tr:first-child td {
+  padding-bottom: 5px;
+}
+.table_prices tr:nth-child(2) td {
+  padding-top: 5px;
+}
+.table_prices tr.tr5 td {
+  padding-top: 5px;
+}
+.table_prices tr.tr6 td {
+  padding-bottom: 5px;
 }
 .table_prices td:first-child {
   width: 185px;
