@@ -163,11 +163,14 @@ $(document).ready(function(){
                         setTimeout(function () {
                             message_form.fadeIn(fadeInTime);
                         }, fadeOutTime);
-                        name.removeClass("okay").removeClass("error");
-                        phone.removeClass("okay").removeClass("error");
                         setTimeout(function () {
                             message_form.fadeOut(fadeOutTime);
+                            setTimeout(function () {
+                                main_form.fadeIn(fadeInTime);
+                            }, fadeOutTime);
                         }, 5000);
+                        name.removeClass("okay").removeClass("error");
+                        phone.removeClass("okay").removeClass("error");
                     },
                     error: function () {
                         form_name.trigger("reset");
