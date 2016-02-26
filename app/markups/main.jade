@@ -38,6 +38,9 @@ html
 		link(rel='stylesheet', href='app/bower_components/normalize-css/normalize.css', type='text/css')
 		// modernizr
 		script(src='app/bower_components/modernizr/modernizr.js')
+		//Owl carusel
+		link(rel='stylesheet', href='css/owl.carousel.css', type='text/css')
+		link(rel='stylesheet', href='css/owl.theme.css', type='text/css')
 
 	body
 		<!--[if lt IE 8]>
@@ -57,7 +60,7 @@ html
 
 
 				.connect_block_links
-					a(href="skype:+735260877?call").phone 8 (352) 608-777
+					a(href="skype:+735260877?call").phone (8352) 608-777
 					a(href="#connect").discounts Скидки
 					a(href="#prices").prices Цены
 					a(href="#map").contacts Контакты
@@ -76,11 +79,11 @@ html
 				.service
 					.service2_img
 					span.service_title Гарантии
-					span.service_text Предоставляем гарантию до 3 месяцев на ремонт и замененные узлы
+					span.service_text Предоставляем гарантию до 12 месяцев на ремонт и замененные узлы
 				.service
 					.service3_img
 					span.service_title Широкий ассортимент
-					span.service_text Более 45 наименований запчастей и агрегатов от ведущих мировых производителей
+					span.service_text Более 1000 наименований запчастей и агрегатов от ведущих мировых производителей
 				.service
 					.service4_img
 					span.service_title Универсальность
@@ -199,7 +202,6 @@ html
 						td 300 <span class="rouble">i<span>
 						td 300 <span class="rouble">i<span>
 					tr.tr9
-						//td
 						td технологическая чистка
 						td
 						td 200 <span class="rouble">i<span>
@@ -210,7 +212,7 @@ html
 		.brands_container.content_container
 			.main_container.clearfix
 				h2.container_title Бренды
-				.brands_imgs
+				.brands_imgs.owl-carousel#brands
 					.brand
 						img(src="img/bosch.png" alt="bosch" width="227" height="110")
 					.brand
@@ -226,11 +228,13 @@ html
 					.brand
 						img(src="img/wai.png" alt="wai" width="227" height="110")
 		.certificate_container
+			.certificate_modal
+				img(src="img/certificate_1_full.jpeg" alt="certificate_1" width="472" height="650").certificate_img_popup
 			.main_container.clearfix
 				h2.container_title Наши сертификаты
 				.certificate_imgs
 					.certificate
-						a(href="img/certificate_1_full.jpeg" target="_blank")
+						a(href="img/certificate_1_full.jpeg" target="_blank").certificate_popup
 							img(src="img/certificate_1.png" alt="certificate_1" width="379" height="516")
 					//.certificate
 						a(href="img/certificate_2_full.jpeg" target="_blank")
@@ -255,13 +259,13 @@ html
 					li Контакты
 						ul.telephone
 							li
-								a(href="skype:+735260877?call").contacts_footer--a 8 (352) 608 - 777
+								a(href="skype:+735260877?call").contacts_footer--a (8352) 608 - 777
 							li.mail_address
 								a(href="mailto:inbox@avstarter.ru").contacts_footer--a inbox@avstarter.ru
 		.footer#map
-			//iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.5218552972037!2d47.251937287836064!3d56.11196853261634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a37c26de23837%3A0x6901c03829e2c7e6!2z0YPQuy4g0KTQtdC00L7RgNCwINCT0LvQsNC00LrQvtCy0LAsIDMsINCn0LXQsdC-0LrRgdCw0YDRiywg0KfRg9Cy0LDRiNGB0LrQsNGPINCg0LXRgdC_LiwgNDI4MDAz!5e0!3m2!1sru!2sru!4v1455998991837" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen)
-			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Mt2-_e7XZFuPN0N8FsY6QAFPNPhAFXPK&width=100%&height=320&lang=ru_RU&sourceType=constructor"></script>
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=V96w0gNz7Cr8S94hFt4kz3ZBN62yBt_e&width=100%&height=320&lang=ru_RU&sourceType=constructor"></script>
 
 		script(src="app/bower_components/jquery/jquery.js")
 		script(src="app/bower_components/qtip2/jquery.qtip.js")
+		script(src="js/owl.carousel.js")
 		script(src="js/main.js")

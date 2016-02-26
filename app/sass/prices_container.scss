@@ -17,8 +17,6 @@
   position: relative;
 }
 .table_prices{
-  position: relative;
-  top: -17px;
   width: 100%;
   z-index: 123;
   @include ptSansReg(18px, #261e24);
@@ -29,7 +27,7 @@
     -o-transition: 0.1s;
     transition: 0.1s;
     &:first-child {
-      height: 60px;
+      height: 47px;
       border-bottom: 2px solid #c2b3b4;
       cursor: default;
       vertical-align: bottom;
@@ -86,12 +84,13 @@
 }
 .tbl {
   position: absolute;
-  top: 51px;
+  top: 73px;
   width: 100%;
   & tr {
     height: 27px;
     &:first-child {
-      height: 60px;
+      border-bottom: 2px solid #c2b3b4;
+      height: 47px;
     }
     &:nth-child(2) {
       height: 29px;

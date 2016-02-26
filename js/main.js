@@ -114,7 +114,7 @@ $(document).ready(function(){
 
     function send_mail(name, phone, form_name, name_target, phone_target, my, at) {
         var name_pattern = /^[\u0410-\u044Fa-zA-Z]{2,20}$/,
-            phone_pattern = /^[0-9-]{10,11}$/i;
+            phone_pattern = /^[0-9-]{6,11}$/i;
         phone.blur(function () {
             if (phone.val() != "") {
                 if (phone.val().search(phone_pattern) == 0) {
@@ -199,4 +199,30 @@ $(document).ready(function(){
             }
         });
     }
+
+    //carousel
+    $("#brands").owlCarousel({
+        items: 4,
+        autoPlay: 3000,
+        pagination: false
+    });
+
+    //popup certificate
+    var link = $(".certificate_popup"),
+        popup = $(".certificate_modal"),
+        popup_img = $(".certificate_img_popup");
+    link.on("click", function(event) {
+        event.preventDefault();
+        popup.fadeIn("slow");
+    });
+    $(document).keydown(function(event) {
+        if( event.keyCode === 27 ) {
+            popup.fadeOut("slow");
+        }
+    });
+    $(document).mouseup(function (event) {
+        if (popup_img.has(event.target).length === 0){
+            popup.fadeOut("slow");
+        }
+    });
 });

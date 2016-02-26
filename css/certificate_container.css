@@ -45,3 +45,20 @@
   font-size: 18px;
   color: white;
 }
+
+.certificate_modal {
+  position: fixed;
+  display: none;
+  height: 650px;
+  width: 472px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9999999;
+}
+.certificate_modal img {
+  display: block;
+  margin: auto;
+}

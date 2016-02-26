@@ -9,8 +9,6 @@
 }
 
 .table_prices {
-  position: relative;
-  top: -17px;
   width: 100%;
   z-index: 123;
   font-family: "PT Sans Regular";
@@ -25,7 +23,7 @@
   transition: 0.1s;
 }
 .table_prices tr:first-child {
-  height: 60px;
+  height: 47px;
   border-bottom: 2px solid #c2b3b4;
   cursor: default;
   vertical-align: bottom;
@@ -71,14 +69,15 @@
 
 .tbl {
   position: absolute;
-  top: 51px;
+  top: 73px;
   width: 100%;
 }
 .tbl tr {
   height: 27px;
 }
 .tbl tr:first-child {
-  height: 60px;
+  border-bottom: 2px solid #c2b3b4;
+  height: 47px;
 }
 .tbl tr:nth-child(2) {
   height: 29px;
