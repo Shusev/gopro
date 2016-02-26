@@ -160,17 +160,14 @@ $(document).ready(function(){
                     success: function () {
                         form_name.trigger("reset");
                         main_form.fadeOut(fadeOutTime);
-                        //message_form.fadeIn(fadeInTime);
                         setTimeout(function () {
                             message_form.fadeIn(fadeInTime);
                         }, fadeOutTime);
                         name.removeClass("okay").removeClass("error");
                         phone.removeClass("okay").removeClass("error");
-                        //setTimeout(function () {
-                        //    $(".success").fadeOut("slow");
-                        //}, 1500);
-                        //main_form.fadeOut('1s');
-                        //message_form.fadeIn('1s');
+                        setTimeout(function () {
+                            message_form.fadeOut(fadeOutTime);
+                        }, 5000);
                     },
                     error: function () {
                         form_name.trigger("reset");

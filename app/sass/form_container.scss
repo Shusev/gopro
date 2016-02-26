@@ -211,42 +211,34 @@
 .error {
   background-color: #F5A9A9;
   color: red;
-  & .contacts_input::-webkit-input-placeholder {
-    text-indent: 0px;
-    transition: text-indent 0.5s ease;
+  &::-webkit-input-placeholder {
+    color:#261e24;
   }
-  &.contacts_input::-moz-placeholder {
-    text-indent: 0px;
-    transition: text-indent 0.5s ease;
+  &::-moz-placeholder          {
+    color:#261e24;
   }
-  &.contacts_input:-moz-placeholder {
-    text-indent: 0px;
-    transition: text-indent 0.5s ease;
+  &:-moz-placeholder           {
+    color:#261e24;
   }
-  &.contacts_input:-ms-input-placeholder {
-    text-indent: 0px;
-    transition: text-indent 0.5s ease;
-  }
-  &.contacts_input:focus::-webkit-input-placeholder {
-    text-indent: 500px;
-    transition: text-indent 0.5s ease;
-  }
-  &.contacts_input:focus::-moz-placeholder {
-    text-indent: 500px;
-    transition: text-indent 0.5s ease;
-  }
-  &.contacts_input:focus:-moz-placeholder {
-    text-indent: 500px;
-    transition: text-indent 0.5s ease;
-  }
-  &.contacts_input:focus:-ms-input-placeholder {
-    text-indent: 500px;
-    transition: text-indent 0.5s ease;
+  &:-ms-input-placeholder      {
+    color:#261e24;
   }
 }
 .okay {
   background-color: #81F79F;
   color: green;
+  &::-webkit-input-placeholder {
+    color:#261e24;
+  }
+  &::-moz-placeholder          {
+    color:#261e24;
+  }
+  &:-moz-placeholder           {
+    color:#261e24;
+  }
+  &:-ms-input-placeholder      {
+    color:#261e24;
+  }
 }
 .ok_message {
   display: none;
@@ -262,4 +254,36 @@
     display: block;
     margin-bottom: 16px;
   }
+}
+.contacts_input::-webkit-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.5s ease;
+}
+.contacts_input::-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.5s ease;
+}
+.contacts_input:-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.5s ease;
+}
+.contacts_input:-ms-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.5s ease;
+}
+.contacts_input:focus::-webkit-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
+}
+.contacts_input:focus::-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
+}
+.contacts_input:focus:-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
+}
+.contacts_input:focus:-ms-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
 }
