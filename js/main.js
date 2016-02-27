@@ -36,11 +36,11 @@ $(document).ready(function(){
     function hover_tr(a, b) {
         a.hover(
             function(){
-                a.css("background-color","#f0cdc5");
+                //a.css("background-color","#f0cdc5");
                 b.css("background-color","#f0cdc5");
             },
             function(){
-                a.css("background-color","white");
+                //a.css("background-color","white");
                 b.css("background-color","white");
             }
         );
@@ -114,7 +114,7 @@ $(document).ready(function(){
 
     function send_mail(name, phone, form_name, name_target, phone_target, my, at) {
         var name_pattern = /^[\u0410-\u044Fa-zA-Z]{2,20}$/,
-            phone_pattern = /^[0-9-]{6,11}$/i;
+            phone_pattern = /^[0-9-]{6,}$/i;
         phone.blur(function () {
             if (phone.val() != "") {
                 if (phone.val().search(phone_pattern) == 0) {

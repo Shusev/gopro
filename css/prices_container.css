@@ -76,7 +76,7 @@
   height: 27px;
 }
 .tbl tr:first-child {
-  border-bottom: 2px solid #c2b3b4;
+  border-bottom: 2px solid white;
   height: 47px;
 }
 .tbl tr:nth-child(2) {
