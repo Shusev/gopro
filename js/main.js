@@ -28,7 +28,9 @@ $(document).ready(function(){
     hover_tr($(".tr3"), $(".td3"));
     hover_tr($(".tr4"), $(".td4"));
     hover_tr($(".tr5"), $(".td5"));
+    hover_tr($(".tr5"), $(".td6"));
     hover_tr($(".tr6"), $(".td6"));
+    hover_tr($(".tr6"), $(".td5"));
     hover_tr($(".tr7"), $(".td7"));
     hover_tr($(".tr8"), $(".td8"));
     hover_tr($(".tr9"), $(".td9"));
@@ -201,10 +203,13 @@ $(document).ready(function(){
     }
 
     //carousel
-    $("#brands").owlCarousel({
-        items: 4,
-        autoPlay: 3000,
-        pagination: false
+    var mySwiper = new Swiper ('.swiper-container', {
+        slidesPerView: 4,
+        autoplay: 3000,
+        mousewheelControl: true,
+        freeMode: true,
+        loop: true,
+        autoplayDisableOnInteraction: false
     });
 
     //popup certificate

@@ -21,6 +21,34 @@
   z-index: 123;
   @include ptSansReg(18px, #261e24);
   & tr {
+    height: 27px;
+    &:first-child {
+      border-bottom: 2px solid white;
+      height: 47px;
+    }
+    &:nth-child(2) {
+      height: 29px;
+    }
+    &:nth-child(3) {
+      height: 23px;
+    }
+    &:nth-child(4) {
+      height: 23px;
+    }
+    &:nth-child(5) {
+      height: 28px;
+    }
+    &:nth-child(6) {
+      height: 28px;
+    }
+    &:nth-child(7) {
+      height: 23px;
+    }
+    &:nth-child(8) {
+      height: 23px;
+    }
+  }
+  & tr {
     height: 21px;
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s;
@@ -54,10 +82,11 @@
 
   & td {
     &:first-child {
-      width: 185px;
+      width: 214px;
     }
     &:nth-child(2) {
       width: 85px;
+      vertical-align: bottom;
     }
     &:nth-child(3) {
       width: 75px;
@@ -87,6 +116,10 @@
   top: 73px;
   width: 100%;
   & tr {
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
     height: 27px;
     &:first-child {
       border-bottom: 2px solid white;
