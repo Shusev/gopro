@@ -206,7 +206,6 @@ $(document).ready(function(){
     var mySwiper = new Swiper ('.swiper-container', {
         slidesPerView: 4,
         autoplay: 3000,
-        mousewheelControl: true,
         freeMode: true,
         loop: true,
         autoplayDisableOnInteraction: false
