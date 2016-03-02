@@ -182,6 +182,22 @@ $(document).ready(function(){
                 });
             }
             else {
+                switch (true) {
+                    case (phone.val() === "" && name.val() === ""):
+                        name.addClass("error");
+                        phone.addClass("error");
+                        tooltip(name_target, "введите имя", my, at);
+                        tooltip(phone_target, "введите номер", my, at);
+                        break;
+                    case ((name.val() === "" || name.hasClass("error")) && (phone.val() != "" || !phone.hasClass("error"))) :
+                        tooltip(name_target, "введите имя", my, at);
+                        name.addClass("error");
+                        break;
+                    case ((phone.val() === "" || phone.hasClass("error")) && (name.val() != "" || !name.hasClass("error"))) :
+                        tooltip(phone_target, "введите номер", my, at);
+                        phone.addClass("error");
+                        break;
+                }
             }
         });
     }
