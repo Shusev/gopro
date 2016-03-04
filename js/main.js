@@ -156,7 +156,7 @@ $(document).ready(function(){
             event.preventDefault();
             if (name.hasClass("okay") && phone.hasClass("okay")) {
                 $.ajax({
-                    url: "../avstarter/mail.php",
+                    url: "../mail.php",
                     type: "POST",
                     data: form_name.serialize(),
                     success: function () {

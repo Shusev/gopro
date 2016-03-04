@@ -35,6 +35,17 @@
     color: white;
   }
 }
+.developer {
+  position: absolute;
+  bottom: -315px;
+  right: 503px;
+  z-index: 9999;
+  @include ptSansReg (16px, black);
+  .link_developer {
+    color: black;
+    text-transform: uppercase;
+  }
+}
 .contacts_table__cell--time {
   padding-left: 20px;
 }
