@@ -1,9 +1,9 @@
 {
-  "name": "avstarter",
+  "name": "gopro",
   "version": "1.0.0",
-  "description": "avstarter service",
+  "description": "gopro service",
   "main": "gulpfile.js",
-  "repository": "https://github.com/Shusev/avstarter",
+  "repository": "https://github.com/Shusev/gopro",
   "scripts": {},
   "author": "Nikolay Shusev",
   "license": "",

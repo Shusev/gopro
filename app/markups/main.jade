@@ -9,25 +9,9 @@ html
 		head
 		meta(http-equiv = 'Content-Type', content = 'text/html; charset=utf-8')
 		meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
-		title Автостартер, Ремонт, продажа Генераторов и Стартеров Чебоксары
+		title Аренда GoPro Hero3+ Black Edition Чебоксары
 
-		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-		<link rel="manifest" href="img/favicon/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
 
 		meta(name='viewport' content='width=960')
 		link(rel='stylesheet', href='css/style.css', type='text/css')
@@ -45,228 +29,95 @@ html
 		<!--[if lt IE 8]>
 		<p class="chromeframe">Похоже, что ты используешь устаревший браузер, друг. Пожалуйста, <a href="http://browsehappy.com/">скачай новый браузер абсолютно бесплатно</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p>
 		<![endif]-->
-		.header
+		.header.content_container
 			.main_container.clearfix
-				span.logo Автостартер
-				.soc_btns
-					a(href="mailto:inbox@avstarter.ru")
-						.mail
-						.mail_tab
-					a(href="https://vk.com/avstarter" target="_blank")
-						.vk
-						.vk_tab
-				a(href="#map").address г. Чебоксары, ул.Федора Гладкова, д.3
+				.header_top.clearfix
+					a.logo(href="#")
+					ul.menu_top
+						li.menu_li
+							| О камерах и аксессуарах
+						li.menu_li
+							| Условия аренды
+						li.menu_li
+							| Расчет цены
+					.telephones
+						| +7 (919) 676 79-81
+						| +7 (987) 674 00-79
+				.header_main
+					h1.header_title
+						| Аренда GoPro Hero3+ Black Edition
+					h2.header_descriprion
+						| Впечатления в FULL-HD по доступной цене
+						| в Чебоксарах и Новочебоксарске
+					.header_btns
+						a.btn_become
+							| стать героем
+						a.btn_calculate
+							| рассчитать цену
+		.features_container.content_container
+			.main_container.clearfix
+				h2.container_title
+					| Начните съемку прямо сейчас
+				.features
+					.feature-block
+						.feature_img
+						.feature_title
+							| Позвоните или оставьте заявку
+						.feature_desc
+							| Мы свяжемся с вами втечение 10 минут после оформления заявки
+					.feature-block
+						.feature_img
+						.feature_title
+							| Мы заключим с вами договор
+						.feature_desc
+							| Чтобы мы поняли друг друга и никому ничего за это не было
+					.feature-block
+						.feature_img
+						.feature_title
+							| Вы снимаете видео в FULL-HD
+						.feature_desc
+							| Заливаете на наш канал и, возможно, выигрываете у нас скидку :)
+					.feature-block
+						.feature_img
+						.feature_title
+							| Встречаемся снова, вы возвращаете камеру
+						.feature_desc
+							| Мы горячо вас благодарим и добавляем на сайт в раздел “отзывы”
+		.kit_container.content_container
+			.main_container.clearfix
+				h2.container_title
+					| Комплект GoPro HERO3+ Black Edition
+				.main_kit
+					.case_block
+						img(src="#" alt="корпус").case_img
+						span.case_desc
+							| Противоударный водонепроницаемый корпус
+					.akk_and_usb_block
+						span.kit_desc
+							| Заказывая в аренду одну камеру GoPro Hero3+, вы получаете весь комплект Black Edition
+						.akk_block
+							img(src="#" alt="аккумулятор").akk_img
+							span.akk_desc
+								| Аккумулятор 1080 mAh
+						.usb_block
+							img(src="#" alt="кабель USB").usb_img
+							span.usb_desc
+								| Кабель USB
+					.camera_and_sd_block
+						.camera_block
+							img(src="#" alt="камера GoPro").camera_img
+							span.camera_desc
+								| Камера GoPro HERO3+
+						.sd_block
+							img(src="#" alt="micro Sd").camera_img
+							span.camera_desc
+								| Камера GoPro HERO3+
+				.additional_block
+					span.additional_title
+						| + одно крепление на выбор
+					.mounts
 
 
-				.connect_block_links
-					a(href="tel:+78352608777").phone (8352) 608-777
-					a(href="#connect").discounts Скидки
-					a(href="#prices").prices Цены
-					a(href="#map").contacts Контакты
-		.header_container
-			.main_container.clearfix
-				.connect_block.clearfix
-					h1.connect_block_title Не заводится авто?<br> Нет заряда аккумулятора?
-					h2.connect_block_description Ремонт стартеров, генераторов и агрегатов любой сложности от 400 руб.
-					a(href="#map").connect_block_btn связаться
-		.service_container.content_container
-			.main_container.clearfix
-				.service
-					.service1_img
-					span.service_title Профессионализм
-					span.service_text Ремонт стартеров и генераторов производится только сертифицированными специалистами
-				.service
-					.service2_img
-					span.service_title Гарантии
-					span.service_text Предоставляем гарантию до 12 месяцев на ремонт и замененные узлы
-				.service
-					.service3_img
-					span.service_title Широкий ассортимент
-					span.service_text Более 1000 наименований запчастей и агрегатов от ведущих мировых производителей
-				.service
-					.service4_img
-					span.service_title Универсальность
-					span.service_text Ремонтируем стартеры и генераторы любого вида техники
-		#connect
-		.form_container.content_container
-			.main_container.clearfix
-				h2.container_title.discount_title Скидки на ремонт
-				span.disc_text При оформлении скидки вы получаете разовую скидку на ремонт стартера, генератора или агрегата целиком. <br><br><font color="#ef6210">Внимание!</font> Акции и размеры скидок периодически меняются для разных услуг. Будьте начеку!;)
-				.form_block
-					.form_block_inner
-						.ok_message
-							span.ok_message--title
-								| Сообщение отправлено!
-							span.ok_message--text Заявка на скидку оформлена. Будьте на связи, скоро мы свяжемся с вами!
-							span.ok_message--text
-						.form_block_title
-							span.disc_percent 10%
-							span.disc_percent_text скидка на ремонт стартера, генератора или агрегата
-							form#send_form(action='', method='POST')
-								input#name(name="name" type="text" class="contacts_input name_tooltip" placeholder="Как к вам обращаться?" qtip-position="left" qtip-content="Введите имя")
-								input#phone(name="phone" type="text" class="contacts_input phone_tooltip" placeholder="Ваш контактный телефона" qtip-position="left" qtip-content="Введите номер")
-								.btn_form
-									input(type="submit" value="получить скидку" class="submit_btn hvr-sweep-to-right")
-							span.form_footer_btn Политика конфиденциальности
-				.starter_img
-				.politic_cart
-					span.politic_cart_text Мы не продаем, не обмениваем и не даем в аренду контактную информацию пользователей. <br><br>В исключительных обстоятельствах мы можем раскрыть вашу персональную информацию, если этого требует закон или в целях защиты себя и других от противоправных действий или других опасностей.
-		#prices
-		.prices_container.content_container
-			.main_container.clearfix
-				h2.container_title Цены на услуги
-			table.tbl
-				tr
-					td.td1
-				tr
-					td.td2
-				tr
-					td.td3
-				tr
-					td.td4
-				tr
-					td.td5
-				tr
-					td.td6
-				tr
-					td.td7
-				tr
-					td.td8
-				tr
-					td.td9
-			.main_container.clearfix
-				table.table_prices
-					tr.tr1
-						td
-						td
-						td грузовые
-						td легковые отечественные
-						td легковые импортные
-						td грузовые отечественные
-						td грузовые импортные
-					tr.tr2
-						td ремонт генератора
-						td
-						td &#8212
-						td 400 <span class="rouble">i<span>
-						td 500 <span class="rouble">i<span>
-						td 600 <span class="rouble">i<span>
-						td 800 <span class="rouble">i<span>
-					tr.tr3
-						td ремонт стартера
-						td
-						td &#8212
-						td 400 <span class="rouble">i<span>
-						td 500 <span class="rouble">i<span>
-						td 600 <span class="rouble">i<span>
-						td 800 <span class="rouble">i<span>
-					tr.tr4
-						td работы по снятию/установке
-						td
-						td 1000 <span class="rouble">i<span>
-						td 600 <span class="rouble">i<span>
-						td 600 <span class="rouble">i<span>
-						td 1000 <span class="rouble">i<span>
-						td 1000 <span class="rouble">i<span>
-					tr.tr5
-						td диагностика стартера
-						td на стенде
-						td 100 <span class="rouble">i<span>
-						td 100 <span class="rouble">i<span>
-						td 100 <span class="rouble">i<span>
-						td 100 <span class="rouble">i<span>
-						td 100 <span class="rouble">i<span>
-					tr.tr6
-						td или генератора
-						td с разбором
-						td 400 <span class="rouble">i<span>
-						td 200 <span class="rouble">i<span>
-						td 300 <span class="rouble">i<span>
-						td 400 <span class="rouble">i<span>
-						td 400 <span class="rouble">i<span>
-					tr.tr7
-						td перепайка щеток
-						td
-						td 200 <span class="rouble">i<span>
-						td 100 <span class="rouble">i<span>
-						td 100 <span class="rouble">i<span>
-						td 200 <span class="rouble">i<span>
-						td 200 <span class="rouble">i<span>
-					tr.tr8
-						td замена шкива-муфты
-						td
-						td 300 <span class="rouble">i<span>
-						td 300 <span class="rouble">i<span>
-						td 300 <span class="rouble">i<span>
-						td 300 <span class="rouble">i<span>
-						td 300 <span class="rouble">i<span>
-					tr.tr9
-						td технологическая чистка
-						td
-						td 200 <span class="rouble">i<span>
-						td 100 <span class="rouble">i<span>
-						td 100 <span class="rouble">i<span>
-						td 200 <span class="rouble">i<span>
-						td 200 <span class="rouble">i<span>
-		.brands_container.content_container
-			.main_container.clearfix
-				h2.container_title Бренды
-				.swiper-container
-					.brands_imgs.owl-carousel#brands.swiper-wrapper
-						.brand.swiper-slide
-							img(src="img/bosch.png" alt="bosch" width="227" height="110")
-						.brand.swiper-slide
-							img(src="img/valeo.png" alt="valeo" width="227" height="110")
-						.brand.swiper-slide
-							img(src="img/unipoint.png" alt="unipoint" width="227" height="110")
-						.brand.swiper-slide
-							img(src="img/saemoto.png" alt="saemoto" width="227" height="110")
-						.brand.swiper-slide
-							img(src="img/tesla.png" alt="tesla" width="227" height="110")
-						.brand.swiper-slide
-							img(src="img/ika.png" alt="ika" width="227" height="110")
-						.brand.swiper-slide
-							img(src="img/wai.png" alt="wai" width="227" height="110")
-		.certificate_container
-			.certificate_modal
-				img(src="img/certificate_1_full.jpg" alt="certificate_1" width="472" height="650").certificate_img_popup
-			.main_container.clearfix
-				h2.container_title Наши сертификаты
-				.certificate_imgs
-					.certificate
-						a(href="img/certificate_1_full.jpg" target="_blank").certificate_popup
-							img(src="img/certificate_1.jpg" alt="certificate_1" width="379" height="516")
-					//.certificate
-						a(href="img/certificate_2_full.jpg" target="_blank")
-							img(src="img/certificate_2.jpg" alt="certificate_2" width="379" height="516")
-				ul.footer_info
-					li Адрес
-						ul.address_name
-							li ул. Ф. Гладкова, д. 3
-					li Время работы
-						ul.work_time
-							li
-								table.contacts_table
-									tr.contacts_table__line
-										td.contacts_table__cell будни
-										td.contacts_table__cell--time 9:00 до 18:00
-									tr.contacts_table__line
-										td.contacts_table__cell суббота
-										td.contacts_table__cell--time 10:00 до 16:00
-									tr.contacts_table__line
-										td.contacts_table__cell воскресенье
-										td.contacts_table__cell--time выходной
-					li Контакты
-						ul.telephone
-							li
-								a(href="tel:+78352608777").contacts_footer--a (8352) 608 - 777
-							li.mail_address
-								a(href="mailto:inbox@avstarter.ru").contacts_footer--a inbox@avstarter.ru
-				.developer
-					span Разработка сайта&nbsp–&nbsp
-					a(href="http://labcab.ru" target="_blank").link_developer labcab
-		.footer#map
-			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=V96w0gNz7Cr8S94hFt4kz3ZBN62yBt_e&width=100%&height=320&lang=ru_RU&sourceType=constructor"></script>
 
 		script(src="app/bower_components/jquery/jquery.js")
 		script(src="app/bower_components/qtip2/jquery.qtip.js")

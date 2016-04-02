@@ -1,13 +1,6 @@
 @import url(../app/bower_components/normalize-css/normalize.css);
 @import url(../fonts/furore/furore.css);
 @import url(../css/header.css);
-@import url(../css/header_container.css);
-@import url(../css/service_container.css);
-@import url(../css/form_container.css);
-@import url(../css/prices_container.css);
-@import url(../css/brands_container.css);
-@import url(../css/certificate_container.css);
-@import url(../css/footer.css);
 @font-face {
   font-family: 'PT Sans Caption';
   src: url("../fonts/ptsans/ptc55f-webfont.eot");
@@ -114,12 +107,16 @@ html {
   font-family: "PT Sans Caption Bold";
   font-size: 36px;
   color: #261e24;
-  margin: 0;
   padding: 0;
-  margin: 0 0px 32px 0px;
+  margin: 0 0 32px 0;
   line-height: 36px;
 }
 
 .content_container {
   margin-bottom: 125px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
