@@ -1,5 +1,5 @@
-@mixin furore ($size, $color) {
-  font-family: "furore";
+@mixin ptSansNar ($size, $color) {
+  font-family: "PT Sans Narrow";
   font-size: $size;
   color: $color;
 }
@@ -15,11 +15,108 @@
 }
 
 .logo {
-  display: inline-block;
+  float: left;
   width: 160px;
   height: 42px;
+  margin-right: 80px;
   background-image: url("../img/logo.png");
 }
 .menu_top {
-
+  float: left;
+  height: 42px;
+  @include ptSansReg(16px, white);
+  .menu_li {
+    display: inline-block;
+    position: relative;
+    bottom: -8px;
+    text-decoration: underline;
+    cursor: pointer;
+    vertical-align: bottom;
+    line-height: 16px;
+    &:nth-child(1) {
+      width: 100px;
+      margin-right: 57px;
+    }
+    &:nth-child(2) {
+      margin-right: 63px;
+    }
+    &:nth-child(3) {
+      margin-right: 100px;
+    }
+  }
+}
+.header {
+  min-height: 571px;
+  padding-top: 25px;
+  background: url("../img/header_back_1200.jpg") 100% no-repeat;
+  background-size: cover;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+@media (max-width: 1280px) {
+  .header_container {
+    background-image: url("../img/header_back_1200.jpg");
+  }
+}
+@media (max-width: 1024px) {
+  .header_container {
+    background-image: url("../img/header_content_1024.jpg");
+  }
+}
+@media (max-width: 800px) {
+  .header_container {
+    background-image: url("../img/header_content_800.jpg");
+  }
+}
+@media (max-width: 960px) {
+  .header_container {
+    background-image: url("../img/header_content_960.jpg");
+  }
+}
+.telephones {
+  float: left;
+  width: 172px;
+  @include ptSansBold(20px, white);
+  a {
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+}
+.header_top {
+  margin-bottom: 170px;
+}
+.header_main {
+  @include ptSansNar(20px, white);
+  .header_title {
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+  .header_description {
+    font-size: 24px;
+    width: 370px;
+    line-height: 26px;
+    margin-bottom: 42px;
+  }
+  .btn_become {
+    display: inline-block;
+    width: 120px;
+    min-height: 32px;
+    font-size: 18px;
+    background: #1e66f1;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 16px;
+  }
+  .btn_calculate {
+    display: inline-block;
+    width: 164px;
+    min-height: 31px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid white;
+  }
 }
