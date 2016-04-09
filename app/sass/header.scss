@@ -90,6 +90,7 @@
 }
 .header_main {
   @include ptSansNar(20px, white);
+  margin-left: 60px;
   .header_title {
     font-size: 48px;
     margin-bottom: 0;

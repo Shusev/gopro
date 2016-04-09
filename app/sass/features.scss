@@ -1,0 +1,73 @@
+@mixin ptSansBold ($size, $color) {
+  font-family: "PT Sans Bold";
+  font-size: $size;
+  color: $color;
+}
+@mixin ptSansReg ($size, $color) {
+  font-family: "PT Sans Regular";
+  font-size: $size;
+  color: $color;
+}
+
+.features {
+  min-height: 225px;
+  padding-left: 60px;
+}
+.feature_block {
+  float: left;
+  width: 163px;
+  line-height: 16px;
+  .feature_img {
+    background: url(../img/spritesheet.png) no-repeat;
+    margin-bottom: 25px;
+  }
+  .feature_title {
+    @include ptSansBold(16px, #2c2c2c);
+    margin-bottom: 14px;
+  }
+  .feature_desc {
+    @include ptSansReg(16px, #2c2c2c);
+    margin-bottom: 14px;
+  }
+  .features_btn {
+    display: inline-block;
+    @include ptSansBold(16px, white);
+    width: 131px;
+    min-height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background: linear-gradient(to right, #4b61b7, #735c83);
+
+  }
+  &:nth-child(1) {
+    margin-right: 65px;
+    .feature_img {
+      width: 89px;
+      height: 83px;
+      background-position: -274px -5px;
+    }
+  }
+  &:nth-child(2) {
+    margin-right: 50px;
+    .feature_img {
+      width: 62px;
+      height: 83px;
+      background-position: -5px -5px;
+    }
+  }
+  &:nth-child(3) {
+    margin-right: 57px;
+    .feature_img {
+      width: 83px;
+      height: 83px;
+      background-position: -77px -5px;
+    }
+  }
+  &:nth-child(4) {
+    .feature_img {
+      width: 94px;
+      height: 83px;
+      background-position: -170px -5px;
+    }
+  }
+}

@@ -1,6 +1,9 @@
 @import url(../app/bower_components/normalize-css/normalize.css);
 @import url(../fonts/furore/furore.css);
 @import url(../css/header.css);
+@import url(../css/features.css);
+@import url(../css/kit.css);
+@import url(../css/gopro.css);
 @font-face {
   font-family: 'PT Sans Caption';
   src: url("../fonts/ptsans/ptc55f-webfont.eot");
@@ -104,16 +107,17 @@ html {
 }
 
 .container_title {
-  font-family: "PT Sans Caption Bold";
-  font-size: 36px;
-  color: #261e24;
+  font-family: "PT Sans Bold";
+  font-size: 32px;
+  color: #2c2c2c;
   padding: 0;
-  margin: 0 0 32px 0;
+  margin: 0 0 62px 0;
   line-height: 36px;
+  text-align: center;
 }
 
 .content_container {
-  margin-bottom: 125px;
+  margin-bottom: 127px;
 }
 
 ul {
@@ -126,4 +130,8 @@ ul li {
 
 h1, h2 {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }

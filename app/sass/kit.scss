@@ -1,0 +1,58 @@
+@mixin ptSansBold ($size, $color) {
+  font-family: "PT Sans Bold";
+  font-size: $size;
+  color: $color;
+}
+@mixin ptSansReg ($size, $color) {
+  font-family: "PT Sans Regular";
+  font-size: $size;
+  color: $color;
+}
+
+.additional_container_title {
+  @include ptSansBold (32px, #2c2c2c);
+  padding: 0;
+  margin: 0 0 62px 70px;
+}
+.main_kit {
+  width: 867px;
+  height: 374px;
+  padding-left: 70px;
+  padding-top: 90px;
+  line-height: 18px;
+  margin-bottom: 36px;
+  background: url(../img/spritesheet.png) no-repeat -5px -98px;
+}
+.kit_desc {
+  @include ptSansBold (18px, white);
+  width: 205px;
+  margin-bottom: 71px;
+}
+.camera_desc {
+  @include ptSansReg (16px, white);
+  width: 105px;
+  margin-left: 292px;
+  margin-bottom: 5px;
+}
+.sd_desc {
+  @include ptSansReg (16px, white);
+  width: 105px;
+  margin-left: 143px;
+  margin-bottom: 37px;
+}
+.akk_case_block {
+  @include ptSansReg (16px, white);
+  margin-bottom: 10px;
+  .akk_desc {
+    display: inline-block;
+    width: 100px;
+    margin-right: 450px;
+  }
+  .case_desc {
+    display: inline-block;
+  }
+}
+.cable_usb {
+  margin-left: 292px;
+  @include ptSansReg (16px, white);
+}

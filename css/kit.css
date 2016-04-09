@@ -1,0 +1,65 @@
+.additional_container_title {
+  font-family: "PT Sans Bold";
+  font-size: 32px;
+  color: #2c2c2c;
+  padding: 0;
+  margin: 0 0 62px 70px;
+}
+
+.main_kit {
+  width: 867px;
+  height: 374px;
+  padding-left: 70px;
+  padding-top: 90px;
+  line-height: 18px;
+  margin-bottom: 36px;
+  background: url(../img/spritesheet.png) no-repeat -5px -98px;
+}
+
+.kit_desc {
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  color: white;
+  width: 205px;
+  margin-bottom: 71px;
+}
+
+.camera_desc {
+  font-family: "PT Sans Regular";
+  font-size: 16px;
+  color: white;
+  width: 105px;
+  margin-left: 292px;
+  margin-bottom: 5px;
+}
+
+.sd_desc {
+  font-family: "PT Sans Regular";
+  font-size: 16px;
+  color: white;
+  width: 105px;
+  margin-left: 143px;
+  margin-bottom: 37px;
+}
+
+.akk_case_block {
+  font-family: "PT Sans Regular";
+  font-size: 16px;
+  color: white;
+  margin-bottom: 10px;
+}
+.akk_case_block .akk_desc {
+  display: inline-block;
+  width: 100px;
+  margin-right: 450px;
+}
+.akk_case_block .case_desc {
+  display: inline-block;
+}
+
+.cable_usb {
+  margin-left: 292px;
+  font-family: "PT Sans Regular";
+  font-size: 16px;
+  color: white;
+}

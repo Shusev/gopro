@@ -1,0 +1,47 @@
+.se {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.se-Document-icon {
+    width: 62px;
+    height: 83px;
+    background-position: -5px -5px;
+}
+
+.se-action {
+    width: 83px;
+    height: 83px;
+    background-position: -77px -5px;
+}
+
+.se-compl {
+    width: 937px;
+    height: 464px;
+    background-position: -5px -98px;
+}
+
+.se-gopro-hero-3plus-large {
+    width: 672px;
+    height: 675px;
+    background-position: -952px -5px;
+}
+
+.se-ok-icon {
+    width: 94px;
+    height: 83px;
+    background-position: -170px -5px;
+}
+
+.se-pult {
+    width: 210px;
+    height: 195px;
+    background-position: -5px -690px;
+}
+
+.se-tel-icon {
+    width: 89px;
+    height: 83px;
+    background-position: -274px -5px;
+}

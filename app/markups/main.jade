@@ -59,65 +59,100 @@ html
 				h2.container_title
 					| Начните съемку прямо сейчас
 				.features
-					.feature-block
+					.feature_block
 						.feature_img
 						.feature_title
 							| Позвоните или оставьте заявку
 						.feature_desc
-							| Мы свяжемся с вами втечение 10 минут после оформления заявки
-					.feature-block
+							| Мы свяжемся с вами втечение 10 минут
+						a(href="#").features_btn
+							| Оставить заявку
+					.feature_block
 						.feature_img
 						.feature_title
-							| Мы заключим с вами договор
+							| Мы заключаем<br> с вами <u>договор</u>
 						.feature_desc
-							| Чтобы мы поняли друг друга и никому ничего за это не было
-					.feature-block
+							| Чтобы понять друг друга и никому ничего за это не было
+					.feature_block
 						.feature_img
 						.feature_title
-							| Вы снимаете видео в FULL-HD
+							| Вы снимаете крутое видео в FULL-HD
 						.feature_desc
-							| Заливаете на наш канал и, возможно, выигрываете у нас скидку :)
-					.feature-block
+							| И, по желанию, заливаете на наш канал на YouTube
+					.feature_block
 						.feature_img
 						.feature_title
-							| Встречаемся снова, вы возвращаете камеру
+							| Встречаемся снова
 						.feature_desc
-							| Мы горячо вас благодарим и добавляем на сайт в раздел “отзывы”
+							| Возвращаете камеру, мы горячо вас благодарим и добавляем на сайт в раздел <u>“отзывы”</u>
 		.kit_container.content_container
 			.main_container.clearfix
 				h2.container_title
 					| Комплект GoPro HERO3+ Black Edition
 				.main_kit
-					.case_block
-						img(src="#" alt="корпус").case_img
-						span.case_desc
-							| Противоударный водонепроницаемый корпус
-					.akk_and_usb_block
-						span.kit_desc
-							| Заказывая в аренду одну камеру GoPro Hero3+, вы получаете весь комплект Black Edition
-						.akk_block
-							img(src="#" alt="аккумулятор").akk_img
-							span.akk_desc
-								| Аккумулятор 1080 mAh
-						.usb_block
-							img(src="#" alt="кабель USB").usb_img
-							span.usb_desc
-								| Кабель USB
-					.camera_and_sd_block
-						.camera_block
-							img(src="#" alt="камера GoPro").camera_img
-							span.camera_desc
-								| Камера GoPro HERO3+
-						.sd_block
-							img(src="#" alt="micro Sd").camera_img
-							span.camera_desc
-								| Камера GoPro HERO3+
-				.additional_block
-					span.additional_title
-						| + одно крепление на выбор
-					.mounts
-
-
+					.kit_desc
+						| Заказывая в аренду одну камеру GoPro Hero3+,<br> вы получаете весь<br> комплект Black Edition
+					.camera_desc
+						| Камера<br> GoPro HERO3+
+					.sd_desc
+						| Карта памяти 64 Gb
+					.akk_case_block
+						.akk_desc
+							| Аккумулятор 1080 mAh
+						.case_desc
+							| Противоударный<br> водонепроницаемый корпус
+					.cable_usb
+						| Кабель USB
+				.additional_container_title
+					| + одно крепление на выбор
+			.swiper-container
+				.swiper-wrapper
+					.additional_item.swiper-slide
+						img(src="img/bosch.png" alt="bosch" width="227" height="110")
+					.additional_item.swiper-slide
+						img(src="img/valeo.png" alt="valeo" width="227" height="110")
+					.additional_item.swiper-slide
+						img(src="img/unipoint.png" alt="unipoint" width="227" height="110")
+					.additional_item.swiper-slide
+						img(src="img/saemoto.png" alt="saemoto" width="227" height="110")
+					.additional_item.swiper-slide
+						img(src="img/tesla.png" alt="tesla" width="227" height="110")
+					.additional_item.swiper-slide
+						img(src="img/ika.png" alt="ika" width="227" height="110")
+					.additional_item.swiper-slide
+						img(src="img/wai.png" alt="wai" width="227" height="110")
+		.gopro_container.content_container
+			.main_container.clearfix
+				h2.container_title
+					| Характеристики камеры GoPro Hero3+
+				.gopro_info
+					.gopro_img
+						img(src="../img/cam.png")
+					.info_1
+						.info_title
+							| Разрешение видео
+						| 4K........................... 12fps
+						| 2,7K........................ 30fps
+						| 1080p......................50fps
+						| 1440p......................48fps
+						| 960p, 720p............100fps
+						| WVGA ................... 240fps
+						.info_title
+							| Форматы видео
+						| H.264, MPEG4; фото JPG
+						.info_title
+							| Разрешение фото
+						| 10 МП.............3680x2760
+						| 7 МП...............3072х2304
+						| 5 МП...............2624х1968
+					.info_2
+						.info_title
+							| Интерфейсы и носители
+						| HDMI, AV, USB, Wi-Fi, microSD
+						.info_title
+							| Питание
+						| Аккумулятор AHDBT-302 1180mAH, 3.7V, 4366mWh
+					.pult
 
 		script(src="app/bower_components/jquery/jquery.js")
 		script(src="app/bower_components/qtip2/jquery.qtip.js")

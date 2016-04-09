@@ -2,6 +2,9 @@
 @import url(../fonts/furore/furore.css);
 
 @import url(../css/header.css);
+@import url(../css/features.css);
+@import url(../css/kit.css);
+@import url(../css/gopro.css);
 
 @font-face {
   font-family: 'PT Sans Caption';
@@ -116,12 +119,12 @@
   margin: 0;
   padding: 0;
 }
-@mixin ptSansCaptBold ($size, $color) {
-  font-family: "PT Sans Caption Bold";
+@mixin ptSansBold ($size, $color) {
+  font-family: "PT Sans Bold";
   font-size: $size;
   color: $color;
 }
-
+$containerMargin: 127px;
 
 // main *************************************************************************//
 body {
@@ -148,13 +151,15 @@ html {
   padding: 0 10px 0 10px;
 }
 .container_title {
-  @include ptSansCaptBold (36px, #261e24);
+  @include ptSansBold (32px, #2c2c2c);
   padding: 0;
-  margin: 0 0 32px 0;
+  margin: 0 0 62px 0;
   line-height: 36px;
+  text-align: center;
 }
+
 .content_container {
-  margin-bottom: 125px;
+  margin-bottom: $containerMargin;
 }
 ul {
   margin: 0;
@@ -166,5 +171,6 @@ ul {
 h1, h2 {
   margin: 0;
 }
-
-
+a {
+  text-decoration: none;
+}

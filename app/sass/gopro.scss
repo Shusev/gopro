@@ -1,0 +1,19 @@
+@mixin ptSansReg ($size, $color) {
+  font-family: "PT Sans Regular";
+  font-size: $size;
+  color: $color;
+}
+@mixin ptSansBold ($size, $color) {
+  font-family: "PT Sans Bold";
+  font-size: $size;
+  color: $color;
+}
+.gopro_img {
+  float: left;
+  width: 305px;
+  height: 306px;
+}
+.info_1 {
+  float: left;
+  width: 180px;
+}
