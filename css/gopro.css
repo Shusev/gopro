@@ -20,3 +20,19 @@
   color: #2c2c2c;
   margin-bottom: 13px;
 }
+
+.info_2 {
+  float: left;
+  width: 206px;
+  margin-left: 40px;
+  font-family: "PT Sans Regular";
+  font-size: 16px;
+  color: #2c2c2c;
+  line-height: 18px;
+}
+
+.pult {
+  float: left;
+  width: 210px;
+  height: 195px;
+}

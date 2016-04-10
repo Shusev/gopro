@@ -1,0 +1,42 @@
+@mixin ptSansReg ($size, $color) {
+  font-family: "PT Sans Regular";
+  font-size: $size;
+  color: $color;
+}
+@mixin ptSansBold ($size, $color) {
+  font-family: "PT Sans Bold";
+  font-size: $size;
+  color: $color;
+}
+@mixin ptSansCapBold ($size, $color) {
+  font-family: "PT Sans Caption Bold";
+  font-size: $size;
+  color: $color;
+}
+
+.roubl {
+  font-family: "als_rubl", sans-serif ;
+}
+.table {
+  display: inline-block;
+  @include ptSansReg (16px, #2c2c2c);
+}
+.table, td, tr {
+  border: 1px solid black;
+}
+.range {
+  display: inline-block;
+  -moz-transform: rotate(90deg); /* Äëÿ Firefox */
+  -ms-transform: rotate(90deg); /* Äëÿ IE */
+  -webkit-transform: rotate(90deg); /* Äëÿ Safari, Chrome, iOS */
+  -o-transform: rotate(90deg); /* Äëÿ Opera */
+  transform: rotate(90deg);
+  &::-webkit-slider-runnable-track {
+    background: green;
+    padding: 2em 0;
+  }
+  &::-webkit-slider-thumb {
+    outline: 2px solid blue;
+    background: red;
+  }
+}

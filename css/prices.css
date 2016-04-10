@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.roubl {
+  font-family: "als_rubl", sans-serif;
+}
+
+.table {
+  display: inline-block;
+  font-family: "PT Sans Regular";
+  font-size: 16px;
+  color: #2c2c2c;
+}
+
+.table, td, tr {
+  border: 1px solid black;
+}
+
+.range {
+  display: inline-block;
+  -moz-transform: rotate(90deg);
+  /* ─ы  Firefox */
+  -ms-transform: rotate(90deg);
+  /* ─ы  IE */
+  -webkit-transform: rotate(90deg);
+  /* ─ы  Safari, Chrome, iOS */
+  -o-transform: rotate(90deg);
+  /* ─ы  Opera */
+  transform: rotate(90deg);
+}
+.range::-webkit-slider-runnable-track {
+  background: green;
+  padding: 2em 0;
+}
+.range::-webkit-slider-thumb {
+  outline: 2px solid blue;
+  background: red;
+}
