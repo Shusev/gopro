@@ -1,36 +1,115 @@
 @charset "UTF-8";
 .roubl {
   font-family: "als_rubl", sans-serif;
+  width: 90px;
+  text-align: right;
+  padding-bottom: 15px;
+  padding-right: 30px;
 }
 
 .table {
+  float: left;
+  font-family: "PT Sans Regular";
+  font-size: 16px;
+  color: #2c2c2c;
+  margin-left: 60px;
+}
+
+.heat {
+  text-align: left;
+  padding-left: 34px;
+  padding-bottom: 15px;
+}
+
+.range {
+  -webkit-appearance: none;
+  position: absolute;
+  right: -116px;
+  top: 319px;
+  width: 420px;
+  -moz-transform: rotate(270deg);
+  /* ─ы  Firefox */
+  -ms-transform: rotate(270deg);
+  /* ─ы  IE */
+  -webkit-transform: rotate(270deg);
+  /* ─ы  Safari, Chrome, iOS */
+  -o-transform: rotate(270deg);
+  /* ─ы  Opera */
+  transform: rotate(270deg);
+}
+.range::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  position: relative;
+  width: 367px;
+  height: 40px;
+  background: linear-gradient(#d5cebc, #d5cebc) no-repeat 50% 0;
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: absolute;
+  bottom: -300px;
+  background: url("../img/key.png") no-repeat;
+  width: 53px;
+  height: 500px;
+}
+
+.plus, .minus {
   display: inline-block;
   font-family: "PT Sans Regular";
   font-size: 16px;
   color: #2c2c2c;
+  line-height: 11px;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+  width: 10px;
 }
 
-.table, td, tr {
-  border: 1px solid black;
+.minus {
+  margin-right: 7px;
 }
 
-.range {
-  display: inline-block;
-  -moz-transform: rotate(90deg);
-  /* ─ы  Firefox */
-  -ms-transform: rotate(90deg);
-  /* ─ы  IE */
-  -webkit-transform: rotate(90deg);
-  /* ─ы  Safari, Chrome, iOS */
-  -o-transform: rotate(90deg);
-  /* ─ы  Opera */
-  transform: rotate(90deg);
+.qual {
+  position: relative;
+  top: -1px;
+  font-family: "PT Sans Regular";
+  font-size: 10px;
+  color: #2c2c2c;
+  height: 11px;
+  width: 21px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 11px;
+  margin-right: 11px;
 }
-.range::-webkit-slider-runnable-track {
-  background: green;
-  padding: 2em 0;
+
+.table_tr:nth-child(2n) {
+  background: #e8e8e8;
+  height: 23px;
 }
-.range::-webkit-slider-thumb {
-  outline: 2px solid blue;
-  background: red;
+.table_tr:nth-child(2n+1) {
+  height: 27px;
+}
+
+.table_td:nth-child(1) {
+  width: 128px;
+  text-align: center;
+}
+.table_td:nth-child(2) {
+  width: 320px;
+}
+.table_td:nth-child(3) {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.disc_td {
+  padding-bottom: 15px;
+  width: 225px;
+  text-align: right;
+}
+
+.disc_scale {
+  background-color: #c4c4c4;
 }

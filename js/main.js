@@ -135,4 +135,29 @@ $(document).ready(function(){
         }
     });
 
+    setInterval(function() {
+        $(".qual").val($(".range").val());
+    }, 200);
+    var currentNumber = $(".range").val();
+    var t;
+
+
+    $({numberValue: currentNumber}).animate({numberValue: 25}, {
+        duration: 3000,
+        easing: 'linear',
+        step: function() {
+            $(".range").val(Math.ceil(this.numberValue));
+            t=$(".range").val();
+        }
+    });
+    setTimeout(function() {
+        $({numberValue: t}).animate({numberValue: 14}, {
+            duration: 500,
+            easing: 'linear',
+            step: function() {
+                $(".range").val(Math.ceil(this.numberValue));
+            }
+        });
+    }, 3000);
+
 });

@@ -160,117 +160,150 @@ html
 					| Расчитаейте цену :)
 				.prices_table
 					table.table
-						tr
-							td(colspan=2)
-								| Пожалуйста, выберите количество необходимых камеркреплений и аксессуаров
+						tr.head
+							td(colspan=2).heat
+								| Пожалуйста, выберите количество<br> необходимых камеркреплений и аксессуаров
 							td.roubl
-								| Стоимость за сутки, <span class="rouble">i<span>
-						tr
-							td
-								|1312
-							td
+								| Стоимость за сутки,<span class="rouble">i<span>
+							td.disc_td
+								| Сроки<br> аренды
+						tr(style="height: 20px").table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=1).qual
+								span.plus +
+							td.table_td
 								| Комплект GoPro Hero Black Edition
-							td
+							td.table_td
 								| 350
-						tr
-							td
-								|1312
-							td
+							td(rowspan=15).disc_scale
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Крепление на голову
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Крепление на грудь
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Монопод (палка) 20-100 см
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Ручка-поплавок
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Крепление на руль велосипеда/трубу
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Крепление на запястье/ногу
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Крепление на шлем/поверхность
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Крепление на стропы кайта
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Крепление на фотоаппарат
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Крепление на кепку/карман
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Присоска на машину
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Пульт управления
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr.table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Дополнительный аккумулятор
-							td
+							td.table_td
 								| 50
-						tr
-							td
-								|1312
-							td
+						tr(style="height: 20px").table_tr
+							td.table_td
+								span.minus -
+								input(type="text" value=0).qual
+								span.plus +
+							td.table_td
 								| Дополнительная карта памяти
-							td
+							td.table_td
 								| 50
-					input(type="range").range
+					input(type="range" min=1 max=29 step=1 value=7).range
 
 		script(src="app/bower_components/jquery/jquery.js")
 		script(src="app/bower_components/qtip2/jquery.qtip.js")
