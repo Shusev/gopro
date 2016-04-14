@@ -177,6 +177,7 @@ html
 							td.table_td
 								| 350
 							td(rowspan=15).disc_scale
+								input(type="range" min=1 max=29 step=1 value=7).range
 						tr.table_tr
 							td.table_td
 								span.minus -
@@ -303,7 +304,7 @@ html
 								| Дополнительная карта памяти
 							td.table_td
 								| 50
-					input(type="range" min=1 max=29 step=1 value=7).range
+					//input(type="range" min=1 max=29 step=1 value=7).range
 
 		script(src="app/bower_components/jquery/jquery.js")
 		script(src="app/bower_components/qtip2/jquery.qtip.js")

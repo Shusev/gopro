@@ -32,11 +32,13 @@
   padding-bottom: 15px;
  }
 .range {
+  font-size: 10px;
   //display: inline-block;
+  outline: none;
   -webkit-appearance: none;
   position: absolute;
-  right: -116px;
-  top: 319px;
+  right: -288px;
+  top: 339px;
   width: 420px;
   -moz-transform: rotate(270deg); /* Äëÿ Firefox */
   -ms-transform: rotate(270deg); /* Äëÿ IE */
@@ -46,14 +48,14 @@
   &::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     position: relative;
-    width: 367px;
-    height: 40px;
-    background: linear-gradient(#d5cebc, #d5cebc) no-repeat 50% 0;
+    //width: 367px;
+    //height: 40px;
+    //background: linear-gradient(#d5cebc, #d5cebc) no-repeat 50% 0;
   }
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     position: absolute;
-    bottom: -300px;
+    bottom: -100px;
     background: url("../img/key.png") no-repeat;
     width: 53px;
     height: 500px;
@@ -119,5 +121,5 @@
   text-align: right;
 }
 .disc_scale {
-  background-color: #c4c4c4;
+  background: url("../img/calc.png");
 }

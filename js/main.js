@@ -143,7 +143,7 @@ $(document).ready(function(){
 
 
     $({numberValue: currentNumber}).animate({numberValue: 25}, {
-        duration: 3000,
+        duration: 2000,
         easing: 'linear',
         step: function() {
             $(".range").val(Math.ceil(this.numberValue));
@@ -158,6 +158,6 @@ $(document).ready(function(){
                 $(".range").val(Math.ceil(this.numberValue));
             }
         });
-    }, 3000);
+    }, 2000);
 
 });
