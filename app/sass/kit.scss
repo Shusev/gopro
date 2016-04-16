@@ -56,3 +56,24 @@
   margin-left: 292px;
   @include ptSansReg (16px, white);
 }
+.additional_item.swiper-slide {
+  width: 393px;
+  height: 236px;
+  border: 1px solid #959595;
+}
+.addit_text {
+  margin-top: 22px;
+  margin-right: 10px;
+  float: right;
+  width: 184px;
+  .addit_text_title {
+    @include ptSansBold (18px, #2c2c2c);
+    width: 180px;
+    height: 20px;
+    margin-bottom: 19px;
+  }
+  .addit_text_desc {
+    @include ptSansReg (14px, #2c2c2c);
+  }
+}
+

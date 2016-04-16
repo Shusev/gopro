@@ -22,7 +22,8 @@
     "modernizr": "2.8.3",
     "normalize-css": "normalize.css#~3.0.3",
     "jquery": "1.8.1",
-    "swiper": "3.3.1"
+    "swiper": "3.3.1",
+    "instafeed.js": "~1.4.1"
   },
   "devDependencies": {
     "qtip2": "~2.2.1"

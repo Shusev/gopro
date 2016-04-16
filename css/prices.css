@@ -8,11 +8,11 @@
 }
 
 .table {
-  float: left;
   font-family: "PT Sans Regular";
   font-size: 16px;
   color: #2c2c2c;
   margin-left: 60px;
+  margin-bottom: 36px;
 }
 
 .heat {
@@ -110,5 +110,71 @@
 }
 
 .disc_scale {
-  background: url("../img/calc.png");
+  background: url("../img/calc.png") no-repeat;
+}
+
+.sum_container {
+  padding-right: 86px;
+}
+
+.sum_block {
+  float: right;
+  text-align: right;
+  margin-right: 17px;
+  min-height: 44px;
+  font-family: "PT Sans Bold";
+  font-size: 24px;
+  color: black;
+  line-height: 17px;
+  padding-top: 6px;
+}
+.sum_block .days, .sum_block .sum_days {
+  color: #d2655f;
+}
+.sum_block .discount_text, .sum_block .sum_disc, .sum_block .disc_roubl {
+  font-size: 16px;
+}
+
+.sum_per_day_block {
+  min-height: 47px;
+  border-left: 1px solid black;
+  float: right;
+  padding-left: 15px;
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  color: black;
+}
+.sum_per_day_block .sum_per_day {
+  font-size: 35px;
+  height: 27px;
+  display: block;
+  line-height: 33px;
+}
+.sum_per_day_block .days_text {
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  color: black;
+}
+
+.price_list_block {
+  font-family: "PT Sans Regular";
+  font-size: 12px;
+  color: black;
+}
+.price_list_block .price_list {
+  text-decoration: underline;
+  color: black;
+}
+
+.sum {
+  min-height: 50px;
+  margin-bottom: 11px;
+}
+.sum .roubl {
+  font-weight: bold;
+  padding: 0;
+}
+
+.price_list_block {
+  text-align: right;
 }
