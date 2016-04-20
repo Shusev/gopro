@@ -1,0 +1,50 @@
+@mixin ptSansBold ($size, $color) {
+  font-family: "PT Sans Bold";
+  font-size: $size;
+  color: $color;
+}
+@mixin ptSansReg ($size, $color) {
+  font-family: "PT Sans Regular";
+  font-size: $size;
+  color: $color;
+}
+.rewiev_block {
+  display: inline-block;
+  width: 430px;
+  margin-bottom: 56px;
+  &:nth-child(1) {
+    margin-right: 60px;
+  }
+  &:nth-child(3) {
+    margin-right: 60px;
+  }
+  &:nth-child(3) {
+    margin-bottom: 0;
+  }
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .rewiev_block_img {
+    float: left;
+    margin-right: 15px;
+  }
+  .rewiev_block_desc {
+    float: left;
+    width: 295px;
+    .rewiev_block_title {
+      @include ptSansBold (24px, #2c2c2c);
+      line-height: 24px;
+    }
+    .rewiev_block_link {
+      display: block;
+      @include ptSansReg (14px, #44678d);
+      line-height: 14px;
+      margin-bottom: 12px;
+    }
+    .rewiev_block_text {
+      @include ptSansReg (16px, #2c2c2c);
+      font-style: italic;
+      line-height: 18px;
+    }
+  }
+}

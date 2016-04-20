@@ -23,45 +23,63 @@
   line-height: 16px;
 }
 .menu_top .menu_li:nth-child(1) {
-  width: 100px;
-  margin-right: 57px;
+  width: 180px;
+  margin-right: 46px;
 }
 .menu_top .menu_li:nth-child(2) {
   margin-right: 63px;
 }
 .menu_top .menu_li:nth-child(3) {
-  margin-right: 100px;
+  margin-right: 90px;
+}
+
+.gopro_link, .price_link {
+  display: block;
+  margin-bottom: 4px;
 }
 
 .header {
   min-height: 571px;
   padding-top: 25px;
-  background: url("../img/header_back_1200.jpg") 100% no-repeat;
-  background-size: cover;
 }
 .header a {
   text-decoration: none;
   color: white;
 }
 
+@media (max-width: 1600px) {
+  .header {
+    background-image: url("../img/header_back_1600.jpg");
+  }
+}
+@media (max-width: 1440px) {
+  .header {
+    background-image: url("../img/header_back_1440.jpg");
+  }
+}
+@media (max-width: 1366px) {
+  .header {
+    background-image: url("../img/header_back_1366.jpg");
+  }
+}
 @media (max-width: 1280px) {
-  .header_container {
-    background-image: url("../img/header_back_1200.jpg");
+  .header {
+    background-image: url("../img/header_back_1280.jpg");
   }
 }
 @media (max-width: 1024px) {
-  .header_container {
-    background-image: url("../img/header_content_1024.jpg");
+  .header {
+    background-image: url("../img/header_back_1024.jpg");
   }
 }
 @media (max-width: 800px) {
-  .header_container {
-    background-image: url("../img/header_content_800.jpg");
+  .header {
+    background-image: url("../img/header_back_800.jpg");
   }
 }
 @media (max-width: 960px) {
-  .header_container {
-    background-image: url("../img/header_content_960.jpg");
+  .header {
+    background-image: url("../img/header_back_960.jpg");
   }
 }
 .telephones {

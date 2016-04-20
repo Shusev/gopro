@@ -37,7 +37,7 @@
   outline: none;
   -webkit-appearance: none;
   position: absolute;
-  right: -288px;
+  right: -112px;
   top: 339px;
   width: 420px;
   -moz-transform: rotate(270deg); /* Äëÿ Firefox */
@@ -45,6 +45,7 @@
   -webkit-transform: rotate(270deg); /* Äëÿ Safari, Chrome, iOS */
   -o-transform: rotate(270deg); /* Äëÿ Opera */
   transform: rotate(270deg);
+  z-index: 2;
   &::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     position: relative;
@@ -58,8 +59,41 @@
     bottom: -100px;
     background: url("../img/key.png") no-repeat;
     width: 53px;
-    height: 500px;
+    height: 324px;
   }
+}
+@media (max-width: 960px) {
+  .range {
+    top: 354px;
+    //right: -102px;
+  }
+}
+output {
+  position: absolute;
+  background-image: linear-gradient(top, #444444, #999999);
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+  font: bold 15px/30px Georgia;
+  bottom: 175%;
+  left: 0;
+  margin-left: -1%;
+}
+output:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #999999;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -1px;
 }
 .plus, .minus {
   display: inline-block;
@@ -121,7 +155,35 @@
   text-align: right;
 }
 .disc_scale {
+  //position: relative;
   background: url("../img/calc.png") no-repeat;
+  .attention {
+    @include ptSansReg (12px, black);
+    position: absolute;
+    text-align: right;
+    width: 141px;
+    right: 115px;
+    top: 168px;
+    .red {
+      color: #d2655f;
+    }
+  }
+  .percent50, .percent30, .percent15 {
+    position: absolute;
+    @include ptSansBold (56px, rgba(255, 255, 255, 0.5));
+  }
+  .percent50 {
+    right: 96px;
+    top: 230px;
+  }
+  .percent30 {
+    right: 96px;
+    top: 357px;
+  }
+  .percent15 {
+    right: 96px;
+    top: 433px;
+  }
 }
 
 .sum_container {
@@ -165,6 +227,11 @@
     color: black;
   }
 }
+@media (max-width: 960px) {
+  .price_list_block {
+    @include ptSansReg(6px, black);
+  }
+}
 .sum {
   min-height: 50px;
   margin-bottom: 11px;
@@ -175,4 +242,16 @@
 }
 .price_list_block {
   text-align: right;
+}
+.num_days_block {
+  position: absolute;
+  left: 665px;
+  bottom: 132px;
+  text-align: left;
+  @include ptSansCapBold (18px, black);
+}
+@media (max-width: 960px) {
+  .num_days_block {
+    bottom: 192px;
+  }
 }

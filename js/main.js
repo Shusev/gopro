@@ -156,7 +156,7 @@ $(document).ready(function(){
                 }
             });
             setTimeout(function() {
-                $({numberValue: t}).animate({numberValue: 3}, {
+                $({numberValue: t}).animate({numberValue: 1}, {
                     duration: 500,
                     easing: 'linear',
                     step: function() {
@@ -260,6 +260,49 @@ $(document).ready(function(){
         onselectstart: "return false",
         onmousedown: "return false"
     });
+
+
+
+
+    //Scroll anchors
+
+    scroll_anchor($(".gopro_link"));
+    scroll_anchor($(".kit_link"));
+    scroll_anchor($(".price_link"));
+    scroll_anchor($(".calc_link"));
+    scroll_anchor($(".review_link"));
+    scroll_anchor($(".btn_calculate"));
+
+
+
+    function scroll_anchor(target) {
+        target.click(function (event) {
+            event.preventDefault();
+            var id = $(this).attr("href"),
+                top = $(id).offset().top;
+            $("body,html").animate({scrollTop: top}, 1500);
+        });
+    }
+
+
+    //
+
+
+    setInterval(function() {
+        var val = $(".range").val();
+        var aa = $(".num_days_block").css("bottom");
+        aa = parseInt(aa);
+        var bb = 132 + 12.65*val;
+        var cc = bb + "px";
+
+        $(".num_days_block").css("bottom", cc);
+
+        $(".num_days").html(val);
+    }, 50);
+
+
+
+
 
 
 });
