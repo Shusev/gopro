@@ -1,4 +1,6 @@
 .inst {
-  height: 500px;
-  background: url("../img/inst.jpg") no-repeat;
+  width: 100%;
+}
+.inst img {
+  width: 16.6666667%;
 }

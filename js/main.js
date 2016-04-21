@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
     //send mail
+    var fadeInTime = 400,
+        fadeOutTime = 400;
+
 
     send_mail($("#name"), $("#phone"), $("#send_form"), $(".name_tooltip"), $(".phone_tooltip"), "center left", "center right");
 
@@ -192,17 +195,17 @@ $(document).ready(function(){
             car = $("#car").val(),
             pult = $("#pult").val(),
             akk = $("#akk").val(),
-            sd = $("#sd").val(),
+            bank = $("#bank").val(),
 
             sum_0,
             sum_15,
             sum_30,
             sum_50;
 
-        sum_0 = range*(kit*350+head*50+grud*50+monopod*50+poplavok*50+truba*50+noga*50+shlem*50+kayt*50+foto*50+kepka*50+car*50+pult*50+akk*50+sd*50);
-        sum_15 = range*(kit*300+head*50+grud*50+monopod*50+poplavok*50+truba*50+noga*50+shlem*50+kayt*50+foto*50+kepka*50+car*50+pult*50+akk*50+sd*50);
-        sum_30 = range*(kit*250+head*50+grud*50+monopod*50+poplavok*50+truba*50+noga*50+shlem*50+kayt*50+foto*50+kepka*50+car*50+pult*50+akk*50+sd*50);
-        sum_50 = range*(kit*180+head*50+grud*50+monopod*50+poplavok*50+truba*50+noga*50+shlem*50+kayt*50+foto*50+kepka*50+car*50+pult*50+akk*50+sd*50);
+        sum_0 = range*(kit*350+head*50+grud*50+monopod*50+poplavok*50+truba*50+noga*50+shlem*50+kayt*50+foto*50+kepka*50+car*50+pult*50+akk*50+bank*50);
+        sum_15 = range*(kit*300+head*50+grud*50+monopod*50+poplavok*50+truba*50+noga*50+shlem*50+kayt*50+foto*50+kepka*50+car*50+pult*50+akk*50+bank*50);
+        sum_30 = range*(kit*250+head*50+grud*50+monopod*50+poplavok*50+truba*50+noga*50+shlem*50+kayt*50+foto*50+kepka*50+car*50+pult*50+akk*50+bank*50);
+        sum_50 = range*(kit*180+head*50+grud*50+monopod*50+poplavok*50+truba*50+noga*50+shlem*50+kayt*50+foto*50+kepka*50+car*50+pult*50+akk*50+bank*50);
 
         days.html(range);
 
@@ -213,6 +216,9 @@ $(document).ready(function(){
                 sum_per_day.html(0);
             }
             else {
+                //if (head >= 1 || grud >= 1 || monopod >= 1 || poplavok >= 1 || truba >= 1 || noga >= 1 || shlem >= 1 || kayt >= 1 || foto >= 1 || kepka >= 1 || car >= 1 || pult >= 1 || akk >= 1 || bank >= 1) {
+                //    sum_per_day.html((summa.html()/range)-50);
+                //}
                 sum_per_day.html(summa.html()/range);
             }
         }
@@ -301,6 +307,32 @@ $(document).ready(function(){
     }, 50);
 
 
+    //
+
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: 1416967248,
+        limit: 18,
+        accessToken: '1416967248.cf0499d.757336cffa4941f1917a4c5d910d0ae3'
+    });
+    userFeed.run();
+
+    //
+
+    $(".btn_become, .features_btn").on("click", function (event) {
+        event.preventDefault();
+        $(".modal_block").fadeIn("fast");
+        $(".modal").fadeIn("fast");
+    });
+
+    $(document).mouseup(function (e){
+        var div = $(".modal"),
+            block = $(".modal_block");
+        if (!div.is(e.target) && div.has(e.target).length === 0){
+            div.fadeOut("fast");
+            block.fadeOut("fast");
+        }
+    });
 
 
 

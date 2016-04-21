@@ -44,3 +44,115 @@
   font-style: italic;
   line-height: 18px;
 }
+
+.modal_block {
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+}
+
+.modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 268px;
+  height: 288px;
+  text-align: center;
+  background-color: #fff;
+}
+.modal .modal_title {
+  font-family: "PT Sans Bold";
+  font-size: 25px;
+  color: #2c2c2c;
+  margin-top: 47px;
+  margin-bottom: 17px;
+}
+.modal .submit_btn {
+  border: none;
+  outline: none;
+}
+.modal .input {
+  width: 164px;
+  height: 25px;
+  border: none;
+  padding-left: 8px;
+  line-height: 17px;
+  background: url("../img/input.jpg");
+  font-family: "PT Sans Regular";
+  font-size: 14px;
+  color: #666666;
+}
+.modal .input:focus {
+  outline: none;
+}
+.modal .input:nth-child(1) {
+  margin-bottom: 10px;
+}
+.modal .input:nth-child(2) {
+  margin-bottom: 21px;
+}
+.modal .submit_btn {
+  display: inline-block;
+  width: 97px;
+  height: 24px;
+  border-radius: 2px;
+  background: #1e66f1;
+  transition: 0.4s;
+  margin-bottom: 10px;
+  font-family: "PT Sans Regular";
+  font-size: 14px;
+  color: #ffffff;
+}
+.modal .submit_btn:hover {
+  background: #5d92f7;
+}
+.modal .modal_text {
+  text-align: center;
+  line-height: 16px;
+  font-family: "PT Sans Regular";
+  font-size: 14px;
+  color: #2c2c2c;
+}
+.modal .input::-webkit-input-placeholder {
+  text-indent: 0;
+  transition: text-indent 0.5s ease;
+}
+.modal .input::-moz-placeholder {
+  text-indent: 0;
+  transition: text-indent 0.5s ease;
+}
+.modal .input:-moz-placeholder {
+  text-indent: 0;
+  transition: text-indent 0.5s ease;
+}
+.modal .input:-ms-input-placeholder {
+  text-indent: 0;
+  transition: text-indent 0.5s ease;
+}
+.modal .input:focus::-webkit-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
+}
+.modal .input:focus::-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
+}
+.modal .input:focus:-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
+}
+.modal .input:focus:-ms-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
+}
