@@ -1,5 +1,5 @@
 <?
-$adminemail="inbox@avstarter.ru";
+$adminemail="rentgoprocheb@gmail.com";
 $date=date("d.m.y");
 $time=date("H:i");
 
@@ -12,12 +12,13 @@ $msg = '
                         <title></title>
                     </head>
                     <body>
-                        <p>Имя: '.$name.'</p>
-                        <p>Почта: '.$phone.'</p>
+                        <p>Поступила заявка на аренду GoPro камеры:</p>
+                        <span><b>Имя:</b> '.$name.'</span><br>
+                        <span><b>Телефон:</b> '.$phone.'</span><br>
                     </body>
                 </html>';
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
-mail("$adminemail", "$date $time Сообщение от $name", "$msg", "$headers");
+mail("$adminemail", "Уведомление о заявке", "$msg", "$headers");

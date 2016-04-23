@@ -227,7 +227,14 @@ output:after {
     color: black;
   }
 }
+.zalog_block {
+  margin-left: 60px;
+  @include ptSansReg(14px, black);
+}
 @media (max-width: 960px) {
+  .zalog_block {
+    font-size: 8px;
+  }
   .price_list_block {
     @include ptSansReg(6px, black);
   }
@@ -246,12 +253,18 @@ output:after {
 .num_days_block {
   position: absolute;
   left: 665px;
-  bottom: 132px;
+  bottom: 183px;
   text-align: left;
   @include ptSansCapBold (18px, black);
 }
 @media (max-width: 960px) {
   .num_days_block {
-    bottom: 192px;
+    bottom: 370px;
   }
+}
+.container_title a {
+  text-decoration: underline;
+}
+.inst_link .vk_link {
+  color: #1e66f1;
 }

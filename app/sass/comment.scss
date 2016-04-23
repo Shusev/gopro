@@ -12,6 +12,7 @@
   display: inline-block;
   width: 430px;
   margin-bottom: 56px;
+  min-height: 140px;
   &:nth-child(1) {
     margin-right: 60px;
   }
@@ -76,6 +77,16 @@
     @include ptSansBold (25px, #2c2c2c);
     margin-top: 47px;
     margin-bottom: 17px;
+  }
+  .modal_title_success {
+    display: none;
+    @include ptSansBold (25px, #2c2c2c);
+    margin-top: 100px;
+  }
+  .modal_title_error {
+    display: none;
+    @include ptSansBold (25px, #2c2c2c);
+    margin-top: 100px;
   }
   .submit_btn {
     border: none;
@@ -155,5 +166,29 @@
   .input:focus:-ms-input-placeholder {
     text-indent: 500px;
     transition: text-indent 0.5s ease;
+  }
+}
+.error {
+  background-color: #f99595;
+}
+.ok {
+  background-color: #b2ffad;
+}
+
+.developer {
+  width: 940px;
+  z-index: 10;
+  margin: 0 auto 9px;
+  position: relative;
+  text-align: right;
+  @include ptSansReg (16px, black);
+  .link_developer {
+    color: black;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 960px) {
+  .developer {
+    font-size: 8px;
   }
 }

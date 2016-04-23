@@ -47,6 +47,11 @@
   color: white;
 }
 
+@media (max-width: 1920px) {
+  .header {
+    background-image: url("../img/header_back_1920.jpg");
+  }
+}
 @media (max-width: 1600px) {
   .header {
     background-image: url("../img/header_back_1600.jpg");
@@ -107,7 +112,7 @@
 }
 .header_main .header_title {
   font-size: 48px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .header_main .header_description {
   font-size: 24px;
@@ -124,6 +129,10 @@
   text-align: center;
   line-height: 30px;
   margin-right: 16px;
+  transition: 0.3s;
+}
+.header_main .btn_become:hover {
+  background: #5d92f7;
 }
 .header_main .btn_calculate {
   display: inline-block;
@@ -133,4 +142,9 @@
   text-align: center;
   line-height: 30px;
   border: 1px solid white;
+  transition: 0.3s;
+}
+.header_main .btn_calculate:hover {
+  background: #5d92f7;
+  border: 1px solid #5d92f7;
 }

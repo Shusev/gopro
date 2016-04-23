@@ -4,3 +4,49 @@
 .inst img {
   width: 16.6666667%;
 }
+
+@media (max-width: 1920px) {
+  .inst img {
+    width: 12.5%;
+  }
+}
+@media (max-width: 1600px) {
+  .inst img {
+    width: 12.5%;
+  }
+}
+@media (max-width: 1440px) {
+  .inst img {
+    width: 12.5%;
+  }
+}
+@media (max-width: 1366px) {
+  .inst img {
+    width: 12.5%;
+  }
+}
+@media (max-width: 1280px) {
+  .inst img {
+    width: 16.6666667%;
+  }
+}
+@media (max-width: 1024px) {
+  .inst img {
+    width: 16.6666667%;
+  }
+}
+@media (max-width: 800px) {
+  .inst img {
+    width: 25%;
+  }
+}
+@media (max-width: 960px) {
+  .inst img {
+    width: 25%;
+  }
+}
+@media (max-width: 720px) {
+  .inst img {
+    width: 25%;
+  }
+}

@@ -232,7 +232,18 @@ output:after {
   color: black;
 }
 
+.zalog_block {
+  margin-left: 60px;
+  font-family: "PT Sans Regular";
+  font-size: 14px;
+  color: black;
+}
+
 @media (max-width: 960px) {
+  .zalog_block {
+    font-size: 8px;
+  }
+
   .price_list_block {
     font-family: "PT Sans Regular";
     font-size: 6px;
@@ -255,7 +266,7 @@ output:after {
 .num_days_block {
   position: absolute;
   left: 665px;
-  bottom: 132px;
+  bottom: 183px;
   text-align: left;
   font-family: "PT Sans Caption Bold";
   font-size: 18px;
@@ -264,6 +275,13 @@ output:after {
 
 @media (max-width: 960px) {
   .num_days_block {
-    bottom: 192px;
+    bottom: 370px;
   }
+}
+.container_title a {
+  text-decoration: underline;
+}
+
+.inst_link .vk_link {
+  color: #1e66f1;
 }
